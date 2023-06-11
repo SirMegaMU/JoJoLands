@@ -6,10 +6,10 @@ import Order.OrderObtainer;
 import java.util.ArrayList;
 
 public class OrderGenerater {
-    private final OrderRamdomizer randomizer;
+    private final OrderRandomizer randomizer;
     private final OrderObtainer obtainer;
 
-    public OrderGenerater(OrderRamdomizer randomizer) {
+    public OrderGenerater(OrderRandomizer randomizer) {
         this.randomizer = randomizer;
         this.obtainer = new OrderObtainer();
     }

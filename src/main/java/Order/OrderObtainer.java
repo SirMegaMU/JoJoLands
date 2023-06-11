@@ -1,13 +1,13 @@
 package Order;
 
 import Menu.Menu;
-import Ramdomizer.OrderRamdomizer;
+import Ramdomizer.OrderRandomizer;
 import Ramdomizer.Pair;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class OrderObtainer extends OrderRamdomizer {
+public class OrderObtainer extends OrderRandomizer {
     public OrderObtainer() {
         super();
     }
