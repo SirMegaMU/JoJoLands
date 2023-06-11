@@ -73,7 +73,7 @@ public class CsvReader {
 
                 for (Resident resident : listOfResidents) {
                     if (standUser.equals(resident.name)) {
-                        resident.stand = currentStand;
+                        resident.stands.add(currentStand);
                     }
                 }
             }

@@ -1,8 +1,8 @@
 package Order;
 
 import Menu.Menu;
-import Ramdomizer.OrderRandomizer;
-import Ramdomizer.Pair;
+import Menu.Ramdomizer.OrderRandomizer;
+import Menu.Ramdomizer.Pair;
 
 import java.util.ArrayList;
 import java.util.List;

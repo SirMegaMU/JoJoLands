@@ -1,4 +1,4 @@
-package Ramdomizer;
+package Menu.Ramdomizer;
 
 import Order.OrderList;
 import Order.OrderObtainer;

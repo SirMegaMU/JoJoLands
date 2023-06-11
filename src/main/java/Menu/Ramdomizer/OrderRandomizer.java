@@ -1,4 +1,4 @@
-package Ramdomizer;
+package Menu.Ramdomizer;
 
 import CsvReader.CsvReader;
 import Mapping.Resident;

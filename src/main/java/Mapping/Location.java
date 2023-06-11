@@ -5,15 +5,16 @@ import java.util.HashMap;
 
 public class Location {
     public final String name;
-    public ArrayList<HashMap<String, Integer>> connections;
+    public HashMap<String, Integer> connections;
+    public ArrayList<Resident> residents;
 
     public Location(String name) {
         this.name = name;
+        connections = new HashMap<>();
+        residents = new ArrayList<>();
     }
 
     public void add_connection(String LocName, Integer distance) {
-        HashMap<String, Integer> connection = new HashMap<>();
-        connection.put(LocName, distance);
-        connections.add(connection);
+        this.connections.put(LocName, distance);
     }
 }
