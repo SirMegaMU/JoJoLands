@@ -9,9 +9,9 @@ public class OrderGenerater {
     private final OrderRandomizer randomizer;
     private final OrderObtainer obtainer;
 
-    public OrderGenerater(OrderRandomizer randomizer) {
+    public OrderGenerater(OrderRandomizer randomizer, String residentFilePath, int dayNum) {
         this.randomizer = randomizer;
-        this.obtainer = new OrderObtainer();
+        this.obtainer = new OrderObtainer(residentFilePath, dayNum);
     }
 
     public ArrayList<ArrayList<OrderList>> generate() {

@@ -8,8 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class OrderObtainer extends OrderRandomizer {
-    public OrderObtainer() {
-        super();
+    public OrderObtainer(String residentFilePath, int dayNum) {
+        super(residentFilePath, dayNum);
     }
 
     public Pair<Integer> jonathanOrder() {

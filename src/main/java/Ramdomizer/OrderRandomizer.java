@@ -19,8 +19,9 @@ public class OrderRandomizer {
     ArrayList<Resident> resident = loadSystemFile.LoadResident(residentFilePath);
     public ArrayList<ArrayList<OrderList>> residentOrderLists = new ArrayList<>();
 
-    public OrderRandomizer() {
+    public OrderRandomizer(String residentFilePath, int dayNum) {
         this.residentFilePath = residentFilePath;
+        this.dayNum = dayNum;
     }
 
     public int getBound(int indexRest) {
