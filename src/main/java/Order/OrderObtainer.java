@@ -14,7 +14,6 @@ public class OrderObtainer extends OrderRandomizer {
 
     public Pair<Integer> jonathanOrder() {
 
-
         boolean loop = true;
         int indexRest = ran.nextInt(5);
         int indexOrder = ran.nextInt(getBound(indexRest));
@@ -32,7 +31,6 @@ public class OrderObtainer extends OrderRandomizer {
                         if (orderList.get(i).food.equals(list.food)) {
                             count++;
                         }
-
                         if (count > maxcount) {
                             maxcount = count;
                             maxIndices.clear();
@@ -40,7 +38,6 @@ public class OrderObtainer extends OrderRandomizer {
                         } else if (count == maxcount) {
                             maxIndices.add(i);
                         }
-
                         if (count < mincount || mincount == 0) {
                             mincount = count;
                         }
@@ -53,7 +50,7 @@ public class OrderObtainer extends OrderRandomizer {
                     for (Integer maxIndex : maxIndices) {
 
                         int selectedMaxElement = orderList.get(maxIndex).indexOrder;
-                        int selectedMaxRest = orderList.get(maxIndex).indexRest;
+                        int selectedMaxRest = orderList.get(maxIndex).indexRestaurant;
 
                         if (selectedMaxElement == indexOrder && selectedMaxRest == indexRest) {
                             foundMatch = true;
@@ -69,28 +66,25 @@ public class OrderObtainer extends OrderRandomizer {
                 }
             }
         }
-
         return new Pair<>(indexRest, indexOrder);
     }
 
     public Pair<Integer> josephOrder() {
-        /*won’t eat the same food twice until he’s tried
-          everything currently available in JOJOLand’s*/
 
-        int indexRest = ran.nextInt(5); //get index for restaurant
-        int indexOrder = ran.nextInt(getBound(indexRest)); //get index for order
-        if (residentIndex != -1) { //orderList for Joseph not empty
-            orderList = residentOrderLists.get(residentIndex); //get the index for orderList
-            if (orderList.size() < 27) { //check if total days is less than total menu
+        int indexRest = ran.nextInt(5);
+        int indexOrder = ran.nextInt(getBound(indexRest));
+        if (residentIndex != -1) {
+            orderList = residentOrderLists.get(residentIndex);
+            if (orderList.size() < 27) {
                 boolean isDuplicate;
                 do {
                     isDuplicate = false;
                     for (int j = 0; j < orderList.size(); j++) {
-                        if (orderList.get(j).indexRest == indexRest) {
+                        if (orderList.get(j).indexRestaurant == indexRest) {
                             for (int k = 0; k < orderList.size(); k++) {
-                                if (orderList.get(j).indexOrder == indexOrder) { //check if order is similar
-                                    indexRest = ran.nextInt(5); //get new index for restaurant
-                                    indexOrder = ran.nextInt(getBound(indexRest)); //get new index for order
+                                if (orderList.get(j).indexOrder == indexOrder) {
+                                    indexRest = ran.nextInt(5);
+                                    indexOrder = ran.nextInt(getBound(indexRest));
                                     isDuplicate = true;
                                     break;
                                 }
@@ -104,60 +98,56 @@ public class OrderObtainer extends OrderRandomizer {
     }
 
     public Pair<Integer> jotaroOrder() {
-        /*try every dish at one restaurant
-          before moving on to the next.*/
 
-        int indexRest = ran.nextInt(5); //get index for restaurant
-        int indexOrder = ran.nextInt(getBound(indexRest)); //get index for order
-        if (residentIndex != -1) { //orderList for Jotaro not empty
-            orderList = residentOrderLists.get(residentIndex); //get the index for orderList
+        int indexRest = ran.nextInt(5);
+        int indexOrder = ran.nextInt(getBound(indexRest));
+        if (residentIndex != -1) {
+            orderList = residentOrderLists.get(residentIndex);
             if (!orderList.isEmpty()) {
-                int lastIndexRest = orderList.get(orderList.size() - 1).indexRest; //get last indexRest from orderList
+                int lastIndexRest = orderList.get(orderList.size() - 1).indexRestaurant;
                 indexRest = lastIndexRest;
-                indexOrder = ran.nextInt(getBound(indexRest)); //get new index for order
+                indexOrder = ran.nextInt(getBound(indexRest));
                 int count = 0;
                 List<Integer> found = new ArrayList<>();
                 for (int i = 0; i < orderList.size(); i++) {
-                    if (orderList.get(i).indexRest == indexRest) {
-                        found.add(i); //add index for indexRest
+                    if (orderList.get(i).indexRestaurant == indexRest) {
+                        found.add(i);
                         count++;
                     }
                 }
-                if (count > getBound(indexRest)) { //if second time to the restaurant
-                    count = count - getBound(indexRest); //get balance
+                if (count > getBound(indexRest)) {
+                    count = count - getBound(indexRest);
                 }
-                if (count < getBound(indexRest)) { //haven't tried every menu at the restaurant yet
+                if (count < getBound(indexRest)) {
                     boolean loop;
                     do {
                         loop = false;
                         for (Integer integer : found) {
-                            if (orderList.get(integer).indexOrder == indexOrder) { //check if food already tried
-                                indexOrder = ran.nextInt(getBound(indexRest)); //get new index for order
+                            if (orderList.get(integer).indexOrder == indexOrder) {
+                                indexOrder = ran.nextInt(getBound(indexRest));
                                 loop = true;
                                 break;
                             }
                         }
                     } while (loop);
                 } else {
-                    indexRest = (lastIndexRest + 1) % 5; // Move to the next restaurant (5 restaurants)
-                    indexOrder = ran.nextInt(getBound(indexRest)); //get new index for order
+                    indexRest = (lastIndexRest + 1) % 5;
+                    indexOrder = ran.nextInt(getBound(indexRest));
                 }
             }
-
         }
         return new Pair<>(indexRest, indexOrder);
     }
 
     public Pair<Integer> josukeOrder() {
-        //tight weekly budget of $100, can borrow least amount of money if overspent
 
         double budget = 100;
         double moneySpent = 0;
-        int indexRest = ran.nextInt(5); //get index for restaurant
-        int indexOrder = ran.nextInt(getBound(indexRest)); //get index for order
+        int indexRest = ran.nextInt(5);
+        int indexOrder = ran.nextInt(getBound(indexRest));
 
-        if (residentIndex != -1) { //orderList for Josuke not empty
-            orderList = residentOrderLists.get(residentIndex); //get the index for orderList
+        if (residentIndex != -1) {
+            orderList = residentOrderLists.get(residentIndex);
             if (!orderList.isEmpty()) {
                 int j = Math.min(orderList.size(), 7);
                 for (int i = j; i < orderList.size(); i++) {
@@ -165,13 +155,13 @@ public class OrderObtainer extends OrderRandomizer {
                 }
 
                 Menu menu = new Menu(indexRest);
-                moneySpent += menu.getPrice(indexOrder); //get current index's price
+                moneySpent += menu.getPrice(indexOrder);
 
                 while (moneySpent > budget) {
-                    int[] restArr = {2, 3, 4}; //get the restaurant with cheapest menu
-                    indexRest = restArr[ran.nextInt(restArr.length)]; //get index for restaurant
+                    int[] restArr = {2, 3, 4};
+                    indexRest = restArr[ran.nextInt(restArr.length)];
                     List<Integer> foodArr = new ArrayList<>();
-                    switch (indexRest) { //get cheepest food from the restaurant
+                    switch (indexRest) {
                         case 2 -> {
                             foodArr.add(1);
                         }
@@ -198,25 +188,22 @@ public class OrderObtainer extends OrderRandomizer {
     }
 
     public Pair<Integer> giornoOrder() {
-        /*visits Trattoria Trussardi twice a week. orders
-          different dish than last visit except when only
-          1 option available*/
 
         int visited = 0;
         int indexVisited = -1;
         int weekVisits = 0;
         int count = 0;
-        int indexRest = ran.nextInt(5); //get index for restaurant
-        int indexOrder = ran.nextInt(getBound(indexRest)); //get index for order
+        int indexRest = ran.nextInt(5);
+        int indexOrder = ran.nextInt(getBound(indexRest));
 
-        if (residentIndex != -1) { //orderList for Giorno not empty
-            orderList = residentOrderLists.get(residentIndex); //get the index for orderList
+        if (residentIndex != -1) {
+            orderList = residentOrderLists.get(residentIndex);
             if (!orderList.isEmpty()) {
                 for (int i = 0; i < orderList.size(); i++) {
                     count++;
-                    if (orderList.get(i).indexRest == 2) { //if he visited Trattoria Trussardi
+                    if (orderList.get(i).indexRestaurant == 2) {
                         visited++;
-                        indexVisited = i; //get last index where indexRest = 2
+                        indexVisited = i;
                         weekVisits++;
                     }
                     if (count == 8) {
@@ -224,8 +211,6 @@ public class OrderObtainer extends OrderRandomizer {
                         weekVisits = 0;
                     }
                 }
-
-                //if it's not his first visit, indexOrder should be different than last visit
                 if (indexRest == 2) {
                     if (visited >= 1) {
                         boolean loop;
@@ -240,28 +225,27 @@ public class OrderObtainer extends OrderRandomizer {
                 }
 
                 count = 0;
-                int weekSize = 7; //number of days in each week
-                int totalWeeks = (orderList.size() + weekSize - 1) / weekSize; //calculate the total number of weeks
+                int weekSize = 7;
+                int totalWeeks = (orderList.size() + weekSize - 1) / weekSize;
 
                 for (int week = 0; week < totalWeeks; week++) {
-                    int startIndex = week * weekSize; //starting index of the week
-                    int endIndex = Math.min(startIndex + weekSize, orderList.size()); //ending index of the week (considering the remaining days)
-
-                    boolean isFinalWeek = (week == totalWeeks - 1); //check to get most recent week
+                    int startIndex = week * weekSize;
+                    int endIndex = Math.min(startIndex + weekSize, orderList.size());
+                    boolean isFinalWeek = (week == totalWeeks - 1);
 
                     if (isFinalWeek) {
-                        //loop from the first day of the final week until the last day in orderList
+
                         for (int i = startIndex; i < orderList.size(); i++) {
                             count++;
-                            if (count == 5) { //fifth day but haven't visited Trattoria Trussardi yet
+                            if (count == 5) {
                                 if (weekVisits == 0) {
-                                    indexRest = 2; //last 2 days has to be a visit to Trattoria Trussardi
+                                    indexRest = 2;
                                     indexOrder = ran.nextInt(getBound(indexRest));
                                 }
                             }
                             if (count == 6) {
                                 if (weekVisits == 1) {
-                                    indexRest = 2; //last day has to be a visit to Trattoria Trussardi
+                                    indexRest = 2;
                                     indexOrder = ran.nextInt(getBound(indexRest));
                                     boolean loop;
                                     do {
@@ -282,21 +266,17 @@ public class OrderObtainer extends OrderRandomizer {
     }
 
     public Pair<Integer> jolyneOrder() {
-        /*avoid dining at the same restaurant twice in a row
-          She and her father, Jotaro Kujo, always dine together
-          at same restaurant every Saturday.*/
 
-        int indexRest = ran.nextInt(5); //get index for restaurant
-        int indexOrder = ran.nextInt(getBound(indexRest)); //get index for order
+        int indexRest = ran.nextInt(5);
+        int indexOrder = ran.nextInt(getBound(indexRest));
 
-        if (residentIndex != -1) { //orderList for Jolyne not empty
-            orderList = residentOrderLists.get(residentIndex); //get the index for orderList
-            if (Days % 7 != 0) { //if the day is not Saturday
-                //if the previous restaurant is same as the current generated one
+        if (residentIndex != -1) {
+            orderList = residentOrderLists.get(residentIndex);
+            if (Days % 7 != 0) {
                 boolean loop;
                 do {
                     loop = false;
-                    if (orderList.get(orderList.size() - 1).indexRest == indexRest) {
+                    if (orderList.get(orderList.size() - 1).indexRestaurant == indexRest) {
                         indexRest = ran.nextInt(5);
                         indexOrder = ran.nextInt(getBound(indexRest));
                         loop = true;
@@ -304,9 +284,9 @@ public class OrderObtainer extends OrderRandomizer {
                 } while (loop);
             } else { //if the day is Saturday
                 if (indexRestSat != Integer.MAX_VALUE) {
-                    indexRest = indexRestSat;    //if there's a restaurant for Jotaro on Saturday, make it same for Jolyne
+                    indexRest = indexRestSat;
                 } else {
-                    indexRestSat = indexRest;    //if restaurant for Jotaro hasn't been assigned, assign Jolyne's one to Jotaro so that both of them are same
+                    indexRestSat = indexRest;
                 }
                 indexOrder = ran.nextInt(getBound(indexRest));
             }

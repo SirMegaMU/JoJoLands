@@ -36,12 +36,12 @@ public class OrderRandomizer {
     }
 
     public Pair<Integer> otherOrder() {
-        int indexRest = ran.nextInt(5); //get index for restaurant
-        int indexOrder = ran.nextInt(getBound(indexRest)); //get index for order
+        int indexRest = ran.nextInt(5);
+        int indexOrder = ran.nextInt(getBound(indexRest));
         return new Pair<>(indexRest, indexOrder);
     }
 
-    public ArrayList<OrderList> storeOrder(Pair<Integer> pair, String name) { //gets items from Menu and store to orderList
+    public ArrayList<OrderList> storeOrder(Pair<Integer> pair, String name) {
         Menu menu = new Menu(pair.first());
         restaurant = menu.selectedRestaurant;
         food = menu.getFood(pair.second());
