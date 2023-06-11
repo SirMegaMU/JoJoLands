@@ -8,7 +8,7 @@ import Order.OrderList;
 import java.util.ArrayList;
 import java.util.Random;
 
-public class OrderRamdomizer {
+public class OrderRandomizer {
     int dayNum;
     double price;
     String name, restaurant, food, residentFilePath;
@@ -19,7 +19,7 @@ public class OrderRamdomizer {
     ArrayList<Resident> resident = loadSystemFile.LoadResident(residentFilePath);
     public ArrayList<ArrayList<OrderList>> residentOrderLists = new ArrayList<>();
 
-    public OrderRamdomizer() {
+    public OrderRandomizer() {
         this.residentFilePath = residentFilePath;
     }
 

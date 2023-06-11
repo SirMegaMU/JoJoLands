@@ -29,6 +29,7 @@ public class CsvReader {
                 String gender = data[2].trim();
                 String residentialArea = data[3].trim();
 
+                String parents;
                 if ((data[0]).equals("George Joestar II")
                         || (data[0]).equals("Giorno Giovanna")
                         || (data[0]).equals("Holy Kujo")
@@ -36,12 +37,11 @@ public class CsvReader {
                         || (data[0]).equals("Joseph Joestar")
                         || (data[0]).equals("Josuke Higashikata")
                         || (data[0]).equals("Jotaro Kujo")) {
-                    String parents = data[4].trim() + ", " + data[5].trim();
-                    residentList.add(new Resident(name, age, gender, residentialArea, parents));
+                    parents = data[4].trim() + ", " + data[5].trim();
                 } else {
-                    String parents = data[4].trim();
-                    residentList.add(new Resident(name, age, gender, residentialArea, parents));
+                    parents = data[4].trim();
                 }
+                residentList.add(new Resident(name, age, gender, residentialArea, parents));
             }
         } catch (IOException e) {
             e.printStackTrace();
