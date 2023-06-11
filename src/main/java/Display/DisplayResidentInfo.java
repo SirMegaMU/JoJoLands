@@ -26,14 +26,14 @@ public class DisplayResidentInfo {
         }
 
         for (Stand value : stand) {
-            if ((value.standUser).equals(name)) {
-                System.out.println("Stand\t\t\t: " + value.stand + "\n"
-                        + "Destructive Power\t: " + value.destructivePower + "\n"
-                        + "Speed\t\t\t: " + value.speed + "\n"
-                        + "Range\t\t\t: " + value.range + "\n"
-                        + "Stamina\t\t\t: " + value.stamina + "\n"
-                        + "Precision\t\t: " + value.precision + "\n"
-                        + "Development Potential\t: " + value.developmentPotential);
+            if ((value.standUser()).equals(name)) {
+                System.out.println("Stand\t\t\t: " + value.stand() + "\n"
+                        + "Destructive Power\t: " + value.destructivePower() + "\n"
+                        + "Speed\t\t\t: " + value.speed() + "\n"
+                        + "Range\t\t\t: " + value.range() + "\n"
+                        + "Stamina\t\t\t: " + value.stamina() + "\n"
+                        + "Precision\t\t: " + value.precision() + "\n"
+                        + "Development Potential\t: " + value.developmentPotential());
             }
         }
         return containName;

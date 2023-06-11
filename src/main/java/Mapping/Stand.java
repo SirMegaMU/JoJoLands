@@ -1,22 +1,7 @@
 package Mapping;
 
-public class Stand {
-    public final String stand, standUser;
-
-    public final String destructivePower, speed, range, stamina, precision;
-
-    public final String developmentPotential;
-
-    public Stand(String stand, String standUser, String destructivePower, String speed, String range, String stamina, String precision, String developmentPotential) {
-        this.stand = stand;
-        this.standUser = standUser;
-        this.destructivePower = destructivePower;
-        this.speed = speed;
-        this.range = range;
-        this.stamina = stamina;
-        this.precision = precision;
-        this.developmentPotential = developmentPotential;
-    }
+public record Stand(String stand, String standUser, String destructivePower, String speed, String range, String stamina,
+                    String precision, String developmentPotential) {
 
     @Override
     public String toString() {
