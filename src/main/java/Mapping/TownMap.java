@@ -1,5 +1,6 @@
 package Mapping;
 
+import tech.tablesaw.api.Row;
 import tech.tablesaw.api.Table;
 
 import java.util.HashMap;
@@ -25,8 +26,31 @@ public class TownMap {
         }
     }
 
-    public void LoadData(Table resident, Table stand) {
-
+    public void LoadData(Table resident_table, Table stand_table) {
+        HashMap<String, Resident> residents = new HashMap<>();
+        for (Row row : resident_table) {
+            residents.put(row.getString(0),
+                    new Resident(row.getString(0),
+                            row.getString(1),
+                            row.getString(2),
+                            row.getString(3),
+                            row.getString(4)
+                    )
+            );
+        }
+        for (Row row : stand_table) {
+            residents.get(row.getString(1)).stands.add(
+                    new Stand(
+                            row.getString(0), row.getString(1),
+                            row.getString(2), row.getString(3),
+                            row.getString(4), row.getString(5),
+                            row.getString(6), row.getString(7)
+                    )
+            );
+        }
+        for (Resident resident : residents.values()) {
+            locations.get(resident.residentialArea).residents.add(resident);
+        }
     }
 
     private void add_connection(String loc1, String loc2, int distance) {
