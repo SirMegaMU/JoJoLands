@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add resources">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mapping/location.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mapping/map.java" afterDir="false" />
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="rework player choice logistics&#10;fix some class errors">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/Multi_Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/Multi_Choice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +27,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/Menu/Menu.java" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -37,6 +40,8 @@
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+    <option name="sortByType" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
@@ -44,10 +49,18 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "E:/Documents/GitHub/WIA1002",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "last_opened_file_path": "E:/Documents/GitHub/FOP-slurm_reader",
+    "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "database.data.views"
+  },
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
+      "PLAIN_TEXT"
+    ]
   }
 }]]></component>
   <component name="RecentsManager">
@@ -57,6 +70,28 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
     </key>
+  </component>
+  <component name="RunManager" selected="应用程序.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="JoJoLands" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Tester" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tester" />
+      <module name="JoJoLands" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.Tester" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,6 +105,11 @@
       <workItem from="1685763908313" duration="2626000" />
       <workItem from="1685848364635" duration="1935000" />
       <workItem from="1686099113347" duration="32000" />
+      <workItem from="1686137178390" duration="637000" />
+      <workItem from="1686138261036" duration="17000" />
+      <workItem from="1686366836685" duration="15472000" />
+      <workItem from="1686478504597" duration="11686000" />
+      <workItem from="1686497648979" duration="31403000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -78,7 +118,140 @@
       <option name="project" value="LOCAL" />
       <updated>1685769786813</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add pre structure content">
+      <created>1686137804864</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686137804864</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add resident class and stand class">
+      <created>1686375978831</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1686375978831</updated>
+    </task>
+    <task id="LOCAL-00004" summary="del unused classes">
+      <created>1686376005447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1686376005447</updated>
+    </task>
+    <task id="LOCAL-00005" summary="regulate classes">
+      <created>1686456865159</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1686456865159</updated>
+    </task>
+    <task id="LOCAL-00006" summary="add sorting_comparator">
+      <created>1686456908638</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1686456908638</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add OrderRamdomizers">
+      <created>1686464432345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1686464432345</updated>
+    </task>
+    <task id="LOCAL-00008" summary="get randomized orders">
+      <created>1686464499596</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1686464499596</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update randomizer">
+      <created>1686464553217</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1686464553217</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update randomizer">
+      <created>1686464570012</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1686464570012</updated>
+    </task>
+    <task id="LOCAL-00011" summary="regulate funcs and vars">
+      <created>1686465395769</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1686465395769</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add DisplayResidentInfo.java">
+      <created>1686465415842</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1686465415842</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update .gitignore">
+      <created>1686465512386</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1686465512386</updated>
+    </task>
+    <task id="LOCAL-00014" summary="update Order related files">
+      <created>1686468027713</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1686468027713</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add Player class">
+      <created>1686491123865</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1686491123865</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add dependencies">
+      <created>1686491141644</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686491141644</updated>
+    </task>
+    <task id="LOCAL-00017" summary="rework the mappings">
+      <created>1686491184448</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1686491184448</updated>
+    </task>
+    <task id="LOCAL-00018" summary="regulate the csv file">
+      <created>1686497586587</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1686497586587</updated>
+    </task>
+    <task id="LOCAL-00019" summary="holy shit I'm tired now, I need a sleep&#10;most of these files will be reworked later this day">
+      <created>1686519496383</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1686519496383</updated>
+    </task>
+    <task id="LOCAL-00020" summary="rework player choice logistics&#10;fix some class errors">
+      <created>1686540546671</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686540546671</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -97,6 +270,35 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add resources" />
-    <option name="LAST_COMMIT_MESSAGE" value="add resources" />
+    <MESSAGE value="add pre structure content" />
+    <MESSAGE value="add resident class and stand class" />
+    <MESSAGE value="del unused classes" />
+    <MESSAGE value="regulate classes" />
+    <MESSAGE value="add sorting_comparator" />
+    <MESSAGE value="add OrderRamdomizers" />
+    <MESSAGE value="get randomized orders" />
+    <MESSAGE value="update randomizer" />
+    <MESSAGE value="regulate funcs and vars" />
+    <MESSAGE value="add DisplayResidentInfo.java" />
+    <MESSAGE value="update .gitignore" />
+    <MESSAGE value="update Order related files" />
+    <MESSAGE value="add Player class" />
+    <MESSAGE value="add dependencies" />
+    <MESSAGE value="rework the mappings" />
+    <MESSAGE value="regulate the csv file" />
+    <MESSAGE value="holy shit I'm tired now, I need a sleep" />
+    <MESSAGE value="holy shit I'm tired now, I need a sleep&#10;most of these files will be reworked later this day" />
+    <MESSAGE value="rework player choice logistics&#10;fix some class errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="rework player choice logistics&#10;fix some class errors" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.IllegalStateException" package="java.lang" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

@@ -18,9 +18,9 @@ public class Multi_Choice extends Choice {
     @Override
     public String DisplayContent() {
         StringBuilder content = new StringBuilder(this.name);
-        content.append(":\n     ");
+        content.append(":\n   ");
         for (int i = 0; i < this.ChoiceList.size(); i++) {
-            content.append("[").append(this.alphbet.charAt(i)).append("]  ").append(ChoiceList.get(this.alphbet.charAt(i)));
+            content.append("  [").append(this.alphbet.charAt(i)).append("] ").append(ChoiceList.get(this.alphbet.charAt(i)));
         }
         return content.toString();
     }

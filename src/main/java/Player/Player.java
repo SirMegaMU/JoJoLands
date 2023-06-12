@@ -3,7 +3,6 @@ package Player;
 import Mapping.TownMap;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class Player {
     private int current_location = 0;
@@ -28,6 +27,7 @@ public class Player {
     public void setMap(String mapName) {
         this.MapName = mapName;
         this.townMap = new TownMap(this.MapName);
+        refresh();
     }
 
     public String getCurrentLocation() {
@@ -58,22 +58,32 @@ public class Player {
     }
 
     public void MoveTo(String nextloc) {
-        TownMap townMap = new TownMap(this.MapName);
         if (current_location != loc_visited.size() - 1) {
-            if (loc_visited.size() >= current_location + 1) {
-                loc_visited.subList(current_location + 1, loc_visited.size() + 1).clear();
-            }
+            loc_visited.subList(current_location + 1, loc_visited.size()).clear();
             ArrayList<String> this_move = new ArrayList<>();
-            this_move.add(loc_visited.get(current_location - 1).get(1));
+            this_move.add(getCurrentLocation());
             this_move.add(nextloc);
             loc_visited.add(this_move);
             current_location = loc_visited.size() - 1;
         } else {
             ArrayList<String> thismove = new ArrayList<>();
-            thismove.add(loc_visited.get(current_location - 1).get(1));
+            thismove.add(getCurrentLocation());
             thismove.add(nextloc);
             loc_visited.add(thismove);
             current_location++;
+        }
+        System.out.println(loc_visited);
+        refresh();
+    }
+
+    public void MoveBnF(String option) {
+        switch (option) {
+            case "B" -> {
+                current_location--;
+            }
+            case "F" -> {
+                current_location++;
+            }
         }
         refresh();
     }
@@ -87,7 +97,7 @@ public class Player {
 
     }
 
-    public void SaveGame() {
+    public void SaveGame(String FilePath) {
     }
 
 }

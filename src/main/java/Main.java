@@ -22,15 +22,15 @@ public class Main {
         UI ui = new UI(new Player());
 
         ArrayList<String> init_screen = ui.MainScreen();
-        System.out.println(init_screen);
+
         switch (Integer.parseInt(init_screen.get(0))) {
             case 1 -> {
-                String MapMode = ui.Selection("Select a map:", new ArrayList<Choice>() {{
+                ArrayList<String> MapMode = ui.Selection("Select a map:", new ArrayList<Choice>() {{
                     add(new Choice("Default Map", "map"));
                     add(new Choice("Parallel Map", "map"));
                     add(new Choice("Alternate map", "map"));
-                }}).get(0);
-                ui.player.setMap(MapMode);
+                }});
+                ui.player.setMap(MapMode.get(2));
             }
             case 2 -> {
                 ui.player.LoadFrom(init_screen.get(1));
@@ -39,6 +39,11 @@ public class Main {
                 return;
             }
         }
-        // while (true) {boolean res = ui.PlayerAction();if (!res) {break;}}
+        while (true) {
+            boolean res = ui.PlayerAction();
+            if (!res) {
+                break;
+            }
+        }
     }
 }
