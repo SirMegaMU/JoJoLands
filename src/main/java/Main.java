@@ -6,8 +6,6 @@ import tech.tablesaw.api.Table;
 
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.Deque;
-import java.util.Objects;
 
 public class Main {
     public static void main(String[] args) {
@@ -39,10 +37,25 @@ public class Main {
                 return;
             }
         }
+        ui.player.townMap.LoadData(residents_table, stands_table);
+        int markDay = ui.player.day;
         while (true) {
-            boolean res = ui.PlayerAction();
-            if (!res) {
+            int ans = ui.PlayerAction();
+            if (ans == 0) {
                 break;
+            }
+            if (ans > markDay) {
+                markDay = ans;
+                ArrayList<String> days = new ArrayList<>() {{
+                    add("Sunday");
+                    add("Monday");
+                    add("Tuesday");
+                    add("Wednesday");
+                    add("Thursday");
+                    add("Friday");
+                    add("Saturday");
+                }};
+                System.out.println("It's Day " + markDay + " (" + days.get(markDay % 7) + ") of our journey in JOJOLands");
             }
         }
     }

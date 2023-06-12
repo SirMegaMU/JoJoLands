@@ -61,7 +61,7 @@ public class UI {
         return Selection("Welcome, to the fantastical realm of JOJOLands.", choices);
     }
 
-    public boolean PlayerAction() {
+    public int PlayerAction() {
         String loc = player.getCurrentLocation();
         String loc_info = "Current Location: " + loc;
         Location currentLocation = player.townMap.locations.get(loc);
@@ -72,7 +72,7 @@ public class UI {
 
         switch (choices.get(Integer.parseInt(res.get(0)) - 1).id) {
             case "exit" -> {
-                return !Objects.equals(choices.get(0).id, "exit");
+                return 0;
             }
             case "back" -> {
                 player.MoveBnF("B");
@@ -100,7 +100,7 @@ public class UI {
             }
 
         }
-        return true;
+        return player.day;
     }
 
     public ArrayList<String> Selection(String instruction, ArrayList<Choice> choices) {

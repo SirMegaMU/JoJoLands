@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="rework player choice logistics&#10;fix some class errors">
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="Player Action Logic Done">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/Multi_Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/Multi_Choice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -109,7 +107,7 @@
       <workItem from="1686138261036" duration="17000" />
       <workItem from="1686366836685" duration="15472000" />
       <workItem from="1686478504597" duration="11686000" />
-      <workItem from="1686497648979" duration="31403000" />
+      <workItem from="1686497648979" duration="32233000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -251,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686540546671</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Player Action Logic Done">
+      <created>1686567135494</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1686567135494</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,7 +294,8 @@
     <MESSAGE value="holy shit I'm tired now, I need a sleep" />
     <MESSAGE value="holy shit I'm tired now, I need a sleep&#10;most of these files will be reworked later this day" />
     <MESSAGE value="rework player choice logistics&#10;fix some class errors" />
-    <option name="LAST_COMMIT_MESSAGE" value="rework player choice logistics&#10;fix some class errors" />
+    <MESSAGE value="Player Action Logic Done" />
+    <option name="LAST_COMMIT_MESSAGE" value="Player Action Logic Done" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

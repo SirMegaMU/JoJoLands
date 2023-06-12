@@ -1,5 +1,7 @@
 package Mapping;
 
+import tech.tablesaw.api.Table;
+
 import java.util.HashMap;
 
 public class TownMap {
@@ -21,6 +23,10 @@ public class TownMap {
             case "Parallel Map" -> setParallelMap();
             case "Alternate map" -> setAlternateMap();
         }
+    }
+
+    public void LoadData(Table resident, Table stand) {
+
     }
 
     private void add_connection(String loc1, String loc2, int distance) {
