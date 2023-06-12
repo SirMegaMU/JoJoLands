@@ -13,6 +13,7 @@ public class TownMap {
             PolnareffLand = "Polnareff Land", JadeGarden = "Jade Garden", Libeccio = "Libeccio";
 
     public TownMap(String mapName) {
+        this.locations = new HashMap<>();
         MapName = mapName;
         add_locations();
         switch (MapName) {

@@ -6,8 +6,8 @@ public class Multi_Choice extends Choice {
     private final String alphbet;
     private final HashMap<Character, String> ChoiceList;
 
-    public Multi_Choice(String name, String[] choicelist) {
-        super(name);
+    public Multi_Choice(String name, String id, String[] choicelist) {
+        super(name, id);
         this.alphbet = "ABCDEFG";
         this.ChoiceList = new HashMap<Character, String>();
         for (int i = 0; i < choicelist.length; i++) {

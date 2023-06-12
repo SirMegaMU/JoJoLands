@@ -19,29 +19,26 @@ public class Main {
         Table residents_table = parser.load_resident();
         Table stands_table = parser.load_stand();
 
-        UI ui = new UI();
-        Player player = new Player();
+        UI ui = new UI(new Player());
 
         ArrayList<String> init_screen = ui.MainScreen();
-        switch (init_screen.get(0)) {
-            case "1" -> {
+        System.out.println(init_screen);
+        switch (Integer.parseInt(init_screen.get(0))) {
+            case 1 -> {
                 String MapMode = ui.Selection("Select a map:", new ArrayList<Choice>() {{
-                    add(new Choice("Default Map"));
-                    add(new Choice("Parallel Map"));
-                    add(new Choice("Alternate map"));
+                    add(new Choice("Default Map", "map"));
+                    add(new Choice("Parallel Map", "map"));
+                    add(new Choice("Alternate map", "map"));
                 }}).get(0);
-                player.setMap(MapMode);
-
+                ui.player.setMap(MapMode);
             }
-            case "2" -> {
-                System.out.println(init_screen.get(1));
+            case 2 -> {
+                ui.player.LoadFrom(init_screen.get(1));
             }
-            case "3" -> {
+            case 3 -> {
                 return;
             }
         }
-        while (true) {
-            player = ui.PlayerAction(player);
-        }
+        // while (true) {boolean res = ui.PlayerAction();if (!res) {break;}}
     }
 }
