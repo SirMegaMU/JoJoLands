@@ -37,7 +37,7 @@ public class Main {
                 return;
             }
         }
-        System.out.println(residents_table.row(0).getString(0));
+
         ui.player.townMap.LoadData(residents_table, stands_table);
         int markDay = ui.player.day;
         while (true) {

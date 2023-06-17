@@ -31,7 +31,7 @@ public class TownMap {
         for (Row row : resident_table) {
             residents.put(row.getString(0),
                     new Resident(row.getString(0),
-                            row.getString(1),
+                            row.getInt(1),
                             row.getString(2),
                             row.getString(3),
                             row.getString(4)

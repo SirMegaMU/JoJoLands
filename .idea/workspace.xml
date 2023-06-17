@@ -4,12 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add extra info">
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="Load and distribute resident data and stand data&#10;delete unneeded classes">
+      <change afterPath="$PROJECT_DIR$/JOJOland.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Comparator/ResidentComparator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CsvReader/CsvReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Display/DisplayResidents.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Location.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Stand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Stand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu/Ramdomizer/OrderGenerater.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu/Ramdomizer/OrderRandomizer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Menu/Ramdomizer/Pair.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order/OrderHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order/OrderList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Order/OrderObtainer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,28 +54,29 @@
     <option name="showVisibilityIcons" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
-    "last_opened_file_path": "E:/Documents/GitHub/FOP-slurm_reader",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "database.data.views"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Download/WIA1002&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   },
-  "keyToStringList": {
-    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
-      "PLAIN_TEXT"
+  &quot;keyToStringList&quot;: {
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
+      &quot;PLAIN_TEXT&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Documents\GitHub\JoJoLands" />
       <recent name="E:\Documents\GitHub\JoJoLands\src\main\resources" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -87,8 +100,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Tester" />
+        <item itemvalue="应用程序.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -108,7 +121,11 @@
       <workItem from="1686138261036" duration="17000" />
       <workItem from="1686366836685" duration="15472000" />
       <workItem from="1686478504597" duration="11686000" />
-      <workItem from="1686497648979" duration="35719000" />
+      <workItem from="1686497648979" duration="42833000" />
+      <workItem from="1687000431961" duration="672000" />
+      <workItem from="1687002771783" duration="269000" />
+      <workItem from="1687003054254" duration="56000" />
+      <workItem from="1687003126318" duration="493000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -271,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686567985901</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Load and distribute resident data and stand data&#10;delete unneeded classes">
+      <created>1686580018294</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1686580018294</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -312,7 +336,8 @@
     <MESSAGE value="Player Action Logic Done" />
     <MESSAGE value="add day display&#10;modify functions for csv load" />
     <MESSAGE value="add extra info" />
-    <option name="LAST_COMMIT_MESSAGE" value="add extra info" />
+    <MESSAGE value="Load and distribute resident data and stand data&#10;delete unneeded classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load and distribute resident data and stand data&#10;delete unneeded classes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

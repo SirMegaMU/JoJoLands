@@ -16,21 +16,22 @@ public class UI {
     private final Choice load = new Input_Choice("Load Game", "init", "Enter the path of your save file:");
     private final Choice exit = new Choice("Exit", "init");
     private final Choice nextday = new Choice("Advance to Next Day", "nextday");
-    private final Choice resinfo = new Choice("View Resident Information", "sp");
+    private final Choice resinfo = new Choice("View Resident Information", "res_info");
     private final Choice backtt = new Choice("Back to Town Hall", "reset");
 
-    private ArrayList<Choice> get_stand() {
+    private Multi_Choice get_stand() {
         String loc = player.getCurrentLocation();
         Location currentLocation = player.townMap.locations.get(loc);
-        ArrayList<Choice> choices = new ArrayList<>();
         ArrayList<Stand> stands = new ArrayList<>();
+        ArrayList<String> stands_string = new ArrayList<>();
         for (Resident resident : currentLocation.residents) {
             stands.addAll(resident.stands);
         }
         for (Stand stand : stands) {
-            choices.add(new Choice(stand.name(), "stand"));
+            stands_string.add(stand.name());
         }
-        return choices;
+        Multi_Choice stand_choices = new Multi_Choice("Stands", "stand", stands_string.toArray(new String[0]));
+        return stand_choices;
     }
 
     private Choice get_move() {
@@ -68,37 +69,21 @@ public class UI {
         ArrayList<Choice> choices = getAvailablePlayAction(player);
         ArrayList<String> res = Selection(loc_info, choices);
 
-        System.out.println(res);
-
         switch (choices.get(Integer.parseInt(res.get(0)) - 1).id) {
+
+            case "back" -> player.MoveBnF("B");
+            case "forward" -> player.MoveBnF("F");
+            case "reset" -> player.reset();
+            case "nextday" -> player.NewDay();
+            case "save" -> player.SaveGame(res.get(2));
+            case "move" -> player.MoveTo(res.get(2));
+            case "res_info" -> System.out.println(currentLocation.residentInfo());
+            case "stand" -> {
+                ;
+            }
             case "exit" -> {
                 return 0;
             }
-            case "back" -> {
-                player.MoveBnF("B");
-                System.out.println("back");
-            }
-            case "forward" -> {
-                player.MoveBnF("F");
-                System.out.println("forward");
-            }
-            case "reset" -> {
-                player.reset();
-                System.out.println("reset");
-            }
-            case "nextday" -> {
-                player.NewDay();
-                System.out.println("nextday");
-            }
-            case "save" -> {
-                player.SaveGame(res.get(2));
-                System.out.println("back");
-            }
-            case "move" -> {
-                player.MoveTo(res.get(2));
-                System.out.println("move");
-            }
-
         }
         return player.day;
     }
@@ -132,15 +117,14 @@ public class UI {
         }
         if (!currentLocation.residents.isEmpty()) {
             choices.add(resinfo);
-            choices.addAll(get_stand());
+            choices.add(get_stand());
         }
+        choices.addAll(get_bnf());
+        choices.add(backtt);
         if (Objects.equals(player.getCurrentLocation(), "Town Hall")) {
             choices.add(save);
             choices.add(exit);
         }
-        choices.addAll(get_bnf());
-        choices.add(backtt);
-
         return choices;
     }
 

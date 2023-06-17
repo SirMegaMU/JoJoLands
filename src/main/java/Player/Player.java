@@ -54,6 +54,7 @@ public class Player {
             add("null");
             add("Town Hall");
         }});
+        this.current_location = 0;
         refresh();
     }
 
@@ -72,7 +73,7 @@ public class Player {
             loc_visited.add(thismove);
             current_location++;
         }
-        System.out.println(loc_visited);
+        //System.out.println(loc_visited);
         refresh();
     }
 

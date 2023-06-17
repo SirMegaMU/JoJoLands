@@ -1,21 +1,19 @@
 package Mapping;
 
 import tech.tablesaw.api.IntColumn;
-import tech.tablesaw.api.Row;
 import tech.tablesaw.api.StringColumn;
 import tech.tablesaw.api.Table;
 
 import java.util.ArrayList;
-import java.util.Objects;
 
 public class Resident {
 
-    public final String name, age, gender, residentialArea;
-    public final String parents;
+    public final String name, gender, residentialArea, parents;
+    public final int age;
     public ArrayList<Stand> stands;
     public Table infoTable;
 
-    public Resident(String name, String age, String gender, String residentialArea, String parents) {
+    public Resident(String name, int age, String gender, String residentialArea, String parents) {
         this.name = name;
         this.age = age;
         this.gender = gender;
@@ -26,9 +24,10 @@ public class Resident {
     }
 
     public void Table_Gen() {
+        int[] ages = {age,};
         this.infoTable = Table.create("Resident").addColumns(
                 StringColumn.create("Name", name),
-                StringColumn.create("Age", age),
+                IntColumn.create("Age", ages),
                 StringColumn.create("Gender", gender),
                 StringColumn.create("Residential Area", residentialArea),
                 StringColumn.create("Parents", parents)
