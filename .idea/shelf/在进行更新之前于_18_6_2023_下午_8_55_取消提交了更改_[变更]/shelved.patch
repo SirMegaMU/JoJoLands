@@ -1,0 +1,41 @@
+Index: src/main/java/Generater/OrderGenerator.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/src/main/java/Generater/OrderGenerator.java b/src/main/java/Generater/OrderGenerator.java
+new file mode 100644
+--- /dev/null	(date 1687090241596)
++++ b/src/main/java/Generater/OrderGenerator.java	(date 1687090241596)
+@@ -0,0 +1,31 @@
++package Generater;
++
++import Mapping.Resident;
++import tech.tablesaw.api.Row;
++import tech.tablesaw.api.StringColumn;
++import tech.tablesaw.api.Table;
++
++import java.util.ArrayList;
++import java.util.HashMap;
++
++public class OrderGenerator {
++    public OrderGenerator(ArrayList<Resident> residents) {
++        StringColumn resident_col = StringColumn.create("Name");
++        StringColumn restaurant_col = StringColumn.create("Restaurant");
++        StringColumn order_col = StringColumn.create("Order");
++        for (Resident resident : residents) {
++            switch (resident.name) {
++                case "Jonathan Joestar" -> {
++                    Table orderHis = resident.orderHistory;
++                    HashMap<String, Integer> fre = new HashMap<>();
++                    for (Row row : orderHis) {
++                        if (fre.containsKey(row.getString("Food"))) {
++                        } else {
++                            fre.put(row.getString("Food"), 1);
++                        }
++                    }
++                }
++            }
++        }
++    }
++}

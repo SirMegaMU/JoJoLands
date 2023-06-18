@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add dependency for jackson">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Generater/OrderGenerator.java" afterDir="false" />
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add save &amp; load feature">
+      <change afterPath="$PROJECT_DIR$/.idea/shelf/在进行更新之前于_18_6_2023_下午_8_55_取消提交了更改_[变更]/shelved.patch" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -25,6 +22,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="edbac8afef1411d0ab4b58de0646e7515408229d" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
@@ -65,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Documents\GitHub\JoJoLands\src\main\java\Parser" />
       <recent name="E:\Documents\GitHub\JoJoLands" />
       <recent name="E:\Documents\GitHub\JoJoLands\src\main\resources" />
     </key>
@@ -89,6 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.Tester" />
+        <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Main" />
         <item itemvalue="应用程序.Tester" />
       </list>
@@ -114,7 +119,7 @@
       <workItem from="1687000431961" duration="672000" />
       <workItem from="1687002771783" duration="269000" />
       <workItem from="1687003054254" duration="56000" />
-      <workItem from="1687003126318" duration="26511000" />
+      <workItem from="1687003126318" duration="25121000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -319,14 +324,7 @@
       <option name="project" value="LOCAL" />
       <updated>1687090427169</updated>
     </task>
-    <task id="LOCAL-00030" summary="add dependency for jackson">
-      <created>1687091614985</created>
-      <option name="number" value="00030" />
-      <option name="presentableId" value="LOCAL-00030" />
-      <option name="project" value="LOCAL" />
-      <updated>1687091614985</updated>
-    </task>
-    <option name="localTasksCounter" value="31" />
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,6 +342,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="regulate classes" />
     <MESSAGE value="add sorting_comparator" />
     <MESSAGE value="add OrderRamdomizers" />
     <MESSAGE value="get randomized orders" />
@@ -368,8 +367,7 @@
     <MESSAGE value="test the table sorting" />
     <MESSAGE value="add Restaurant class for operate&amp;get restaurant infos" />
     <MESSAGE value="add resident Array to TownMap" />
-    <MESSAGE value="add dependency for jackson" />
-    <option name="LAST_COMMIT_MESSAGE" value="add dependency for jackson" />
+    <option name="LAST_COMMIT_MESSAGE" value="add resident Array to TownMap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
