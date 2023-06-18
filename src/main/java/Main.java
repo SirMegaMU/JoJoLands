@@ -5,11 +5,12 @@ import TUI.UI;
 import Parser.CsvLoader;
 import tech.tablesaw.api.Table;
 
+import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
         // Load files
         InputStream resident_stream = Main.class.getClassLoader().getResourceAsStream("residents.csv");
@@ -33,7 +34,8 @@ public class Main {
                 ui.player.setMap(MapMode.get(2));
             }
             case 2 -> {
-                ui.player.LoadFrom(init_screen.get(1));
+                Player p = ui.player.LoadFrom(init_screen.get(1));
+                ui.player = p;
             }
             case 3 -> {
                 return;

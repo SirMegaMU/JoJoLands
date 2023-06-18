@@ -1,7 +1,10 @@
 package Player;
 
 import Mapping.TownMap;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.*;
 import java.util.ArrayList;
 
 public class Player {
@@ -94,11 +97,23 @@ public class Player {
         this.day++;
     }
 
-    public void LoadFrom(String FilePath) {
-
+    public Player LoadFrom(String FilePath) throws IOException {
+        File f = new File(FilePath);
+        InputStream in = new FileInputStream(f);
+        byte[] data = new byte[(int) f.length()];
+        int len = in.read(data);
+        String str = new String(data, 0, len);
+        ObjectMapper objectMapper = new ObjectMapper();
+        Player player = objectMapper.readValue(str, Player.class);
+        return player;
     }
 
-    public void SaveGame(String FilePath) {
+    public void SaveGame(String FilePath) throws IOException {
+        ObjectMapper objectMapper = new ObjectMapper();
+        String playerJson = objectMapper.writeValueAsString(this);
+        OutputStream fos = new FileOutputStream(FilePath);
+        fos.write(playerJson.getBytes());
+        fos.close();
     }
 
 }

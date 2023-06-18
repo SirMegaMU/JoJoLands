@@ -5,7 +5,10 @@ import Mapping.Location;
 import Mapping.Resident;
 import Mapping.Stand;
 import Player.Player;
+import com.fasterxml.jackson.core.JsonProcessingException;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -63,7 +66,7 @@ public class UI {
         return sel.result("Welcome, to the fantastical realm of JOJOLands.", choices);
     }
 
-    public int PlayerAction() {
+    public int PlayerAction() throws IOException {
         String loc = player.getCurrentLocation();
         String loc_info = "Current Location: " + loc;
         Location currentLocation = player.townMap.locations.get(loc);
