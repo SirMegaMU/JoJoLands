@@ -3,6 +3,7 @@ package Mapping;
 import tech.tablesaw.api.Row;
 import tech.tablesaw.api.Table;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class TownMap {
@@ -61,19 +62,92 @@ public class TownMap {
     private void add_locations() {
         this.locations.put(TownHall, new Location(TownHall));
         this.locations.put(MoriohGrandHotel, new Location(MoriohGrandHotel));
-        this.locations.put(TrattoriaTrussardi, new Location(TrattoriaTrussardi));
         this.locations.put(GreenDophinStreetPrison, new Location(GreenDophinStreetPrison));
         this.locations.put(AngeloRock, new Location(AngeloRock));
         this.locations.put(PolnareffLand, new Location(PolnareffLand));
-        this.locations.put(CafeDeuxMagots, new Location(CafeDeuxMagots));
-        this.locations.put(JadeGarden, new Location(JadeGarden));
         this.locations.put(SanGiorgioMaggiore, new Location(SanGiorgioMaggiore));
-        this.locations.put(Libeccio, new Location(Libeccio));
         this.locations.put(DIOsMansion, new Location(DIOsMansion));
-        this.locations.put(SavageGarden, new Location(SavageGarden));
         this.locations.put(JoestarMansion, new Location(JoestarMansion));
         this.locations.put(Vineyard, new Location(Vineyard));
         this.locations.put(PassioneRestaurant, new Location(PassioneRestaurant));
+
+        this.locations.put(JadeGarden, new Restaurant(JadeGarden) {{
+            addMenu(new ArrayList<>() {{
+                add("Braised Chicken in Black Bean Sauce");
+                add("Braise Goose Web with Vermicelli");
+                add("Deep-fried Hiroshima Oyster");
+                add("Poached Tofu with Dried Shrimps");
+                add("Scrambled Egg White with Milk");
+            }}, new ArrayList<>() {{
+                add(15F);
+                add(21F);
+                add(17F);
+                add(12F);
+                add(10F);
+            }});
+        }});
+        this.locations.put(CafeDeuxMagots, new Restaurant(CafeDeuxMagots) {{
+            addMenu(new ArrayList<>() {{
+                add("Sampling Matured Cheese Platter");
+                add("Spring Lobster Salad");
+                add("Spring Organic Omelette");
+                add("Truffle-flavoured Poultry Supreme");
+                add("White Asparagus");
+            }}, new ArrayList<>() {{
+                add(23F);
+                add(35F);
+                add(23F);
+                add(34F);
+                add(26F);
+            }});
+        }});
+        this.locations.put(TrattoriaTrussardi, new Restaurant(TrattoriaTrussardi) {{
+            addMenu(new ArrayList<>() {{
+                add("Caprese Salad");
+                add("Creme caramel");
+                add("Lamb Chops with Apple Sauce");
+                add("Spaghetti alla Puttanesca");
+            }}, new ArrayList<>() {{
+                add(10F);
+                add(6.5F);
+                add(25F);
+                add(15F);
+            }});
+        }});
+        this.locations.put(Libeccio, new Restaurant(Libeccio) {{
+            addMenu(new ArrayList<>() {{
+                add("Formaggio");
+                add("Ghiaccio");
+                add("Melone");
+                add("Prosciutto and Pesci");
+                add("Risotto");
+                add("Zucchero and Sale");
+            }}, new ArrayList<>() {{
+                add(12.5F);
+                add(1.01F);
+                add(5.2F);
+                add(20.23F);
+                add(13.14F);
+                add(0.6F);
+            }});
+        }});
+        this.locations.put(SavageGarden, new Restaurant(SavageGarden) {{
+            addMenu(new ArrayList<>() {{
+                add("Abbacchio’s Tea");
+                add("DIO’s Bread");
+                add("Giorno’s Donuts");
+                add("Joseph’s Tequila");
+                add("Kakyoin’s Cherry");
+                add("Kakyoin’s Porridge");
+            }}, new ArrayList<>() {{
+                add(1F);
+                add(36.14F);
+                add(6.66F);
+                add(35F);
+                add(3.5F);
+                add(4.44F);
+            }});
+        }});
     }
 
     private void setDefaultMap() {

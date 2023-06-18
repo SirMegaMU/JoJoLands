@@ -8,7 +8,6 @@ import Player.Player;
 
 import java.util.ArrayList;
 import java.util.Objects;
-import java.util.Scanner;
 
 public class UI {
     public Player player;
@@ -19,6 +18,7 @@ public class UI {
     private final Choice nextday = new Choice("Advance to Next Day", "nextday");
     private final Choice resinfo = new Choice("View Resident Information", "res_info");
     private final Choice backtt = new Choice("Back to Town Hall", "reset");
+    private final Choice listOres = new Choice("View Waiting List and Order Processing List", "listOres");
 
     private Multi_Choice get_stand() {
         String loc = player.getCurrentLocation();
@@ -82,6 +82,9 @@ public class UI {
             case "res_info" -> new Display() {{
                 displayResidentInfo(currentLocation.getResidentInfo());
             }};
+            case "listOres" -> {
+                ;
+            }
             case "stand" -> {
                 ;
             }
@@ -98,6 +101,9 @@ public class UI {
         Location currentLocation = player.townMap.locations.get(loc);
         ArrayList<Choice> choices = new ArrayList<>();
         choices.add(get_move());
+        if (Objects.equals(currentLocation.info, "restaurant")) {
+            choices.add(listOres);
+        }
         if (Objects.equals(player.getCurrentLocation(), "Town Hall")) {
             choices.add(nextday);
         }

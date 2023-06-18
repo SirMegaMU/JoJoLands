@@ -3,7 +3,6 @@ package Mapping;
 import tech.tablesaw.api.IntColumn;
 import tech.tablesaw.api.StringColumn;
 import tech.tablesaw.api.Table;
-import tech.tablesaw.columns.Column;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -12,11 +11,13 @@ public class Location {
     public final String name;
     public HashMap<String, Integer> connections;
     public ArrayList<Resident> residents;
+    public String info;
 
     public Location(String name) {
         this.name = name;
-        connections = new HashMap<>();
-        residents = new ArrayList<>();
+        this.connections = new HashMap<>();
+        this.residents = new ArrayList<>();
+        this.info = "normal";
     }
 
     public void add_connection(String LocName, Integer distance) {
