@@ -1,13 +1,14 @@
 package Mapping;
 
 import tech.tablesaw.api.FloatColumn;
+import tech.tablesaw.api.IntColumn;
 import tech.tablesaw.api.StringColumn;
 import tech.tablesaw.api.Table;
 
 import java.util.ArrayList;
 
 public class Restaurant extends Location {
-    public Table menu;
+    public Table menu, waitList, processList;
 
     public Restaurant(String name) {
         super(name);
@@ -15,6 +16,21 @@ public class Restaurant extends Location {
                 StringColumn.create("Order"),
                 FloatColumn.create("Price")
         );
+        waitList = Table.create("Waiting List").addColumns(
+                IntColumn.create("No"),
+                StringColumn.create("Name"),
+                IntColumn.create("Age"),
+                StringColumn.create("Gender"),
+                StringColumn.create("Order")
+        );
+        processList = Table.create("Waiting List").addColumns(
+                IntColumn.create("No"),
+                StringColumn.create("Name"),
+                IntColumn.create("Age"),
+                StringColumn.create("Gender"),
+                StringColumn.create("Order")
+        );
+
         this.info = "restaurant";
     }
 

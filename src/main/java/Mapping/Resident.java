@@ -12,6 +12,7 @@ public class Resident {
     public final int age;
     public ArrayList<Stand> stands;
     public Table infoTable;
+    public Table orderHistory;
 
     public Resident(String name, int age, String gender, String residentialArea, String parents) {
         this.name = name;
@@ -20,6 +21,11 @@ public class Resident {
         this.residentialArea = residentialArea;
         this.parents = parents;
         this.stands = new ArrayList<>();
+        this.orderHistory = Table.create("Order History").addColumns(
+                IntColumn.create("Day"),
+                StringColumn.create("Food"),
+                StringColumn.create("Restaurant")
+        );
         Table_Gen();
     }
 
@@ -34,12 +40,24 @@ public class Resident {
         );
     }
 
+    public String detialInfo() {
+        String ans = this.name + "'s Profile\n";
+        ans += this + "\n";
+        ans += orderHistory + "\n";
+        return ans;
+    }
+
+    public void add_order(int day, String order, String location) {
+        int[] day_l = {day,};
+        Table temp = Table.create("Order History").addColumns(
+                IntColumn.create("Day", day_l),
+                StringColumn.create("Food", order),
+                StringColumn.create("Restaurant", location)
+        );
+    }
+
     @Override
     public String toString() {
-        return "Name: " + name + "\n" +
-                "Age: " + age + "\n" +
-                "Gender: " + gender + "\n" +
-                "Residential Area: " + residentialArea + "\n" +
-                "Parents: " + parents + "\n";
+        return this.infoTable.toString();
     }
 }

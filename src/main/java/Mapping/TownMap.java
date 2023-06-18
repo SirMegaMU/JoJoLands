@@ -8,6 +8,7 @@ import java.util.HashMap;
 
 public class TownMap {
     public HashMap<String, Location> locations;
+    public HashMap<String, Resident> residents;
     public final String MapName;
     public final String TownHall = "Town Hall", SanGiorgioMaggiore = "San Giorgio Maggiore",
             JoestarMansion = "Joestar Mansion", TrattoriaTrussardi = "Trattoria Trussardi",
@@ -18,6 +19,7 @@ public class TownMap {
 
     public TownMap(String mapName) {
         this.locations = new HashMap<>();
+        this.residents = new HashMap<>();
         MapName = mapName;
         add_locations();
         switch (MapName) {
@@ -28,9 +30,8 @@ public class TownMap {
     }
 
     public void LoadData(Table resident_table, Table stand_table) {
-        HashMap<String, Resident> residents = new HashMap<>();
         for (Row row : resident_table) {
-            residents.put(row.getString(0),
+            this.residents.put(row.getString(0),
                     new Resident(row.getString(0),
                             row.getInt(1),
                             row.getString(2),
@@ -40,7 +41,7 @@ public class TownMap {
             );
         }
         for (Row row : stand_table) {
-            residents.get(row.getString(1)).stands.add(
+            this.residents.get(row.getString(1)).stands.add(
                     new Stand(
                             row.getString(0), row.getString(1),
                             row.getString(2), row.getString(3),
@@ -49,7 +50,7 @@ public class TownMap {
                     )
             );
         }
-        for (Resident resident : residents.values()) {
+        for (Resident resident : this.residents.values()) {
             locations.get(resident.residentialArea).residents.add(resident);
         }
     }

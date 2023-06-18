@@ -80,7 +80,7 @@ public class UI {
             case "save" -> player.SaveGame(res.get(2));
             case "move" -> player.MoveTo(res.get(2));
             case "res_info" -> new Display() {{
-                displayResidentInfo(currentLocation.getResidentInfo());
+                displayResidentInfo(currentLocation);
             }};
             case "listOres" -> {
                 ;

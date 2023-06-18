@@ -4,10 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="test the table sorting">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Mapping/Restaurant.java" afterDir="false" />
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add Restaurant class for operate&amp;get restaurant infos">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Generater/OrderGenerator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Location.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Display/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Display/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Restaurant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
     </list>
@@ -113,7 +115,7 @@
       <workItem from="1687000431961" duration="672000" />
       <workItem from="1687002771783" duration="269000" />
       <workItem from="1687003054254" duration="56000" />
-      <workItem from="1687003126318" duration="18771000" />
+      <workItem from="1687003126318" duration="23573000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -304,7 +306,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687077933126</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="add Restaurant class for operate&amp;get restaurant infos">
+      <created>1687083714120</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1687083714120</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +331,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add resident class and stand class" />
     <MESSAGE value="del unused classes" />
     <MESSAGE value="regulate classes" />
     <MESSAGE value="add sorting_comparator" />
@@ -347,7 +355,8 @@
     <MESSAGE value="upload Assignment Topic requirements" />
     <MESSAGE value="regulate stands choices in UI to a stand multi choice" />
     <MESSAGE value="test the table sorting" />
-    <option name="LAST_COMMIT_MESSAGE" value="test the table sorting" />
+    <MESSAGE value="add Restaurant class for operate&amp;get restaurant infos" />
+    <option name="LAST_COMMIT_MESSAGE" value="add Restaurant class for operate&amp;get restaurant infos" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
