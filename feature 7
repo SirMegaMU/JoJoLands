@@ -1,0 +1,75 @@
+import java.util.*;
+
+class PowerCable {
+    String locationA;
+    String locationB;
+    int length;
+
+    public PowerCable(String locationA, String locationB, int length) {
+        this.locationA = locationA;
+        this.locationB = locationB;
+        this.length = length;
+    }
+}
+
+class RedHotChiliPepper {
+    List<PowerCable> powerCables;
+
+    public RedHotChiliPepper() {
+        powerCables = new ArrayList<>();
+        initializePowerCables();
+    }
+
+    public void initializePowerCables() {
+        powerCables.add(new PowerCable("Angelo Rock", "DIO’s Mansion", 3));
+        powerCables.add(new PowerCable("Angelo Rock", "Green Dolphin Street Prison", 2));
+        powerCables.add(new PowerCable("Cafe Deux Magots", "Jade Garden", 3));
+        powerCables.add(new PowerCable("Cafe Deux Magots", "Polnareff Land", 4));
+        powerCables.add(new PowerCable("Cafe Deux Magots", "Savage Garden", 4));
+        powerCables.add(new PowerCable("Cafe Deux Magots", "Town Hall", 4));
+        powerCables.add(new PowerCable("DIO’s Mansion", "Libeccio", 2));
+        powerCables.add(new PowerCable("DIO’s Mansion", "Vineyard", 3));
+        powerCables.add(new PowerCable("Jade Garden", "Joestar Mansion", 2));
+        powerCables.add(new PowerCable("Jade Garden", "Morioh Grand Hotel", 3));
+        powerCables.add(new PowerCable("Jade Garden", "San Giorgio Maggiore", 2));
+        powerCables.add(new PowerCable("Joestar Mansion", "Vineyard", 3));
+        powerCables.add(new PowerCable("San Giorgio Maggiore", "Trattoria Trussardi", 3));
+    }
+
+    public void viewUpgradablePowerCables() {
+        System.out.println("Necessary Power Cables to be Upgraded:");
+        int totalLength = 0;
+        for (PowerCable powerCable : powerCables) {
+            System.out.println(powerCable.locationA + " - " + powerCable.locationB + " (" + powerCable.length + " km)");
+            totalLength += powerCable.length;
+        }
+        System.out.println("Total Length: " + totalLength + " km");
+    }
+}
+
+public class JojoLands {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        RedHotChiliPepper redHotChiliPepper = new RedHotChiliPepper();
+
+        System.out.println("Current Location: Angelo Rock");
+        System.out.println("[1] Move to:");
+        System.out.println("[A] DIO’s Mansion [B] Green Dolphin Street Prison");
+        System.out.println("[2] View Resident Information");
+        System.out.println("[3] Red Hot Chili Pepper");
+        System.out.println("[4] Back (DIO’s Mansion)");
+        System.out.println("[5] Back to Town Hall");
+        System.out.print("Select: ");
+        int choice = scanner.nextInt();
+
+        switch (choice) {
+            case 3:
+                redHotChiliPepper.viewUpgradablePowerCables();
+                break;
+            // Add cases for other options as needed
+
+            default:
+                System.out.println("Invalid choice.");
+        }
+    }
+}
