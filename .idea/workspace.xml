@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add Restaurant class for operate&amp;get restaurant infos">
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add resident Array to TownMap">
       <change afterPath="$PROJECT_DIR$/src/main/java/Generater/OrderGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Display/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Display/Display.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Restaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +112,7 @@
       <workItem from="1687000431961" duration="672000" />
       <workItem from="1687002771783" duration="269000" />
       <workItem from="1687003054254" duration="56000" />
-      <workItem from="1687003126318" duration="23573000" />
+      <workItem from="1687003126318" duration="25121000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -313,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687083714120</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="add resident Array to TownMap">
+      <created>1687090427169</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1687090427169</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +335,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="del unused classes" />
     <MESSAGE value="regulate classes" />
     <MESSAGE value="add sorting_comparator" />
     <MESSAGE value="add OrderRamdomizers" />
@@ -356,7 +359,8 @@
     <MESSAGE value="regulate stands choices in UI to a stand multi choice" />
     <MESSAGE value="test the table sorting" />
     <MESSAGE value="add Restaurant class for operate&amp;get restaurant infos" />
-    <option name="LAST_COMMIT_MESSAGE" value="add Restaurant class for operate&amp;get restaurant infos" />
+    <MESSAGE value="add resident Array to TownMap" />
+    <option name="LAST_COMMIT_MESSAGE" value="add resident Array to TownMap" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
