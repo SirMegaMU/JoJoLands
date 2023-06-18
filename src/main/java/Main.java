@@ -1,5 +1,6 @@
 import Player.Player;
 import TUI.Choice;
+import TUI.Selection;
 import TUI.UI;
 import Parser.CsvLoader;
 import tech.tablesaw.api.Table;
@@ -23,7 +24,8 @@ public class Main {
 
         switch (Integer.parseInt(init_screen.get(0))) {
             case 1 -> {
-                ArrayList<String> MapMode = ui.Selection("Select a map:", new ArrayList<Choice>() {{
+                Selection sel = new Selection();
+                ArrayList<String> MapMode = sel.result("Select a map:", new ArrayList<Choice>() {{
                     add(new Choice("Default Map", "map"));
                     add(new Choice("Parallel Map", "map"));
                     add(new Choice("Alternate map", "map"));

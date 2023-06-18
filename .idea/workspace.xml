@@ -4,24 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="Load and distribute resident data and stand data&#10;delete unneeded classes">
-      <change afterPath="$PROJECT_DIR$/JOJOland.pdf" afterDir="false" />
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="regulate stands choices in UI to a stand multi choice">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Sort/Sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/TUI/Selection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Comparator/ResidentComparator.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CsvReader/CsvReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Display/DisplayResidents.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Display/DisplayMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Display/DisplayResidentInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Display/Display.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Location.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Location.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/Resident.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Mapping/TownMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu/Ramdomizer/OrderGenerater.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu/Ramdomizer/OrderRandomizer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Menu/Ramdomizer/Pair.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order/OrderHistory.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order/OrderList.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Order/OrderObtainer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Tester.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Tester.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,8 +92,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Tester" />
         <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.Tester" />
       </list>
     </recent_temporary>
   </component>
@@ -125,7 +117,7 @@
       <workItem from="1687000431961" duration="672000" />
       <workItem from="1687002771783" duration="269000" />
       <workItem from="1687003054254" duration="56000" />
-      <workItem from="1687003126318" duration="493000" />
+      <workItem from="1687003126318" duration="14480000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -295,7 +287,21 @@
       <option name="project" value="LOCAL" />
       <updated>1686580018294</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="upload Assignment Topic requirements">
+      <created>1687003715371</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1687003715371</updated>
+    </task>
+    <task id="LOCAL-00026" summary="regulate stands choices in UI to a stand multi choice">
+      <created>1687003784349</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1687003784349</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +319,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add resources" />
     <MESSAGE value="add pre structure content" />
     <MESSAGE value="add resident class and stand class" />
     <MESSAGE value="del unused classes" />
@@ -337,7 +342,9 @@
     <MESSAGE value="add day display&#10;modify functions for csv load" />
     <MESSAGE value="add extra info" />
     <MESSAGE value="Load and distribute resident data and stand data&#10;delete unneeded classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load and distribute resident data and stand data&#10;delete unneeded classes" />
+    <MESSAGE value="upload Assignment Topic requirements" />
+    <MESSAGE value="regulate stands choices in UI to a stand multi choice" />
+    <option name="LAST_COMMIT_MESSAGE" value="regulate stands choices in UI to a stand multi choice" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -1,5 +1,6 @@
 package TUI;
 
+import Display.Display;
 import Mapping.Location;
 import Mapping.Resident;
 import Mapping.Stand;
@@ -30,8 +31,7 @@ public class UI {
         for (Stand stand : stands) {
             stands_string.add(stand.name());
         }
-        Multi_Choice stand_choices = new Multi_Choice("Stands", "stand", stands_string.toArray(new String[0]));
-        return stand_choices;
+        return new Multi_Choice("Stands", "stand", stands_string.toArray(new String[0]));
     }
 
     private Choice get_move() {
@@ -59,7 +59,8 @@ public class UI {
         choices.add(start);
         choices.add(load);
         choices.add(exit);
-        return Selection("Welcome, to the fantastical realm of JOJOLands.", choices);
+        Selection sel = new Selection();
+        return sel.result("Welcome, to the fantastical realm of JOJOLands.", choices);
     }
 
     public int PlayerAction() {
@@ -67,7 +68,8 @@ public class UI {
         String loc_info = "Current Location: " + loc;
         Location currentLocation = player.townMap.locations.get(loc);
         ArrayList<Choice> choices = getAvailablePlayAction(player);
-        ArrayList<String> res = Selection(loc_info, choices);
+        Selection sel = new Selection();
+        ArrayList<String> res = sel.result(loc_info, choices);
 
         switch (choices.get(Integer.parseInt(res.get(0)) - 1).id) {
 
@@ -77,7 +79,9 @@ public class UI {
             case "nextday" -> player.NewDay();
             case "save" -> player.SaveGame(res.get(2));
             case "move" -> player.MoveTo(res.get(2));
-            case "res_info" -> System.out.println(currentLocation.residentInfo());
+            case "res_info" -> new Display() {{
+                displayResidentInfo(currentLocation.getResidentInfo());
+            }};
             case "stand" -> {
                 ;
             }
@@ -88,24 +92,6 @@ public class UI {
         return player.day;
     }
 
-    public ArrayList<String> Selection(String instruction, ArrayList<Choice> choices) {
-        System.out.println(instruction);
-        ArrayList<String> ans = new ArrayList<>();
-        for (int i = 0; i < choices.size(); i++) {
-            System.out.println("[" + (i + 1) + "]  " + choices.get(i).DisplayContent());
-        }
-        System.out.print("\nSelect:");
-        Scanner sc = new Scanner(System.in);
-        String input = sc.nextLine();
-        ans.add(input);
-        int i = Integer.parseInt(input.substring(0, 1));
-        if (i < choices.size()) {
-            ans.add(choices.get(i - 1).effect(input));
-        }
-        System.out.println("============================");
-        ans.add(0, Character.getNumericValue(ans.get(0).charAt(0)) + "");
-        return ans;
-    }
 
     public ArrayList<Choice> getAvailablePlayAction(Player player) {
         String loc = player.getCurrentLocation();
