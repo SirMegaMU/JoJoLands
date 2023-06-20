@@ -5,9 +5,7 @@ import Mapping.Location;
 import Mapping.Resident;
 import Mapping.Stand;
 import Player.Player;
-import com.fasterxml.jackson.core.JsonProcessingException;
 
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Objects;
@@ -122,5 +120,4 @@ public class UI {
         }
         return choices;
     }
-
 }
