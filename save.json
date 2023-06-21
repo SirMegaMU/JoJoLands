@@ -1,0 +1,4015 @@
+{
+  "day": 8,
+  "loc_visited": [
+    [
+      "null",
+      "Town Hall"
+    ]
+  ],
+  "available_movements": [],
+  "Back_Forward": [
+    "null",
+    "null"
+  ],
+  "MapName": "Default Map",
+  "townMap": {
+    "locations": {
+      "Jade Garden": {
+        "name": "Jade Garden",
+        "connections": {
+          "Town Hall": 5,
+          "Cafe Deux Magots": 3,
+          "Joestar Mansion": 2,
+          "Morioh Grand Hotel": 3,
+          "San Giorgio Maggiore": 2
+        },
+        "residents": [],
+        "info": "restaurant",
+        "menu": {
+          "empty": false
+        },
+        "waitList": {
+          "empty": true
+        },
+        "processList": {
+          "empty": true
+        },
+        "residentInfo": {
+          "empty": true
+        }
+      },
+      "Cafe Deux Magots": {
+        "name": "Cafe Deux Magots",
+        "connections": {
+          "Jade Garden": 3,
+          "Town Hall": 4,
+          "Polnareff Land": 4,
+          "Savage Garden": 4
+        },
+        "residents": [],
+        "info": "restaurant",
+        "menu": {
+          "empty": false
+        },
+        "waitList": {
+          "empty": true
+        },
+        "processList": {
+          "empty": true
+        },
+        "residentInfo": {
+          "empty": true
+        }
+      },
+      "Trattoria Trussardi": {
+        "name": "Trattoria Trussardi",
+        "connections": {
+          "Morioh Grand Hotel": 6,
+          "San Giorgio Maggiore": 3,
+          "Green Dolphin Street Prison": 6
+        },
+        "residents": [],
+        "info": "restaurant",
+        "menu": {
+          "empty": false
+        },
+        "waitList": {
+          "empty": true
+        },
+        "processList": {
+          "empty": true
+        },
+        "residentInfo": {
+          "empty": true
+        }
+      },
+      "Angelo Rock": {
+        "name": "Angelo Rock",
+        "connections": {
+          "DIO's Mansion": 3,
+          "Green Dolphin Street Prison": 2
+        },
+        "residents": [
+          {
+            "name": "Akira Otoishi",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": 19,
+            "stands": [
+              {
+                "name": "Red Hot Chili Pepper",
+                "standUser": "Akira Otoishi",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "A",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Yoshikage Kira",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": 33,
+            "stands": [
+              {
+                "name": "Atom Heart Father",
+                "standUser": "Yoshikage Kira",
+                "destructivePower": "E",
+                "speed": "E",
+                "range": "Null",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              },
+              {
+                "name": "Killer Queen",
+                "standUser": "Yoshikage Kira",
+                "destructivePower": "A",
+                "speed": "B",
+                "range": "D",
+                "stamina": "B",
+                "precision": "B",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Ken Oyanagi",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": 11,
+            "stands": [
+              {
+                "name": "Boy II Man",
+                "standUser": "Ken Oyanagi",
+                "destructivePower": "C",
+                "speed": "B",
+                "range": "B",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Terunosuke Miyamoto",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Enigma",
+                "standUser": "Terunosuke Miyamoto",
+                "destructivePower": "E",
+                "speed": "E",
+                "range": "C",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Toyohiro Kanedaichi",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Super Fly",
+                "standUser": "Toyohiro Kanedaichi",
+                "destructivePower": "E",
+                "speed": "E",
+                "range": "Null",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Yoshihiro Kira",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Masazo Kinoto",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": 29,
+            "stands": [
+              {
+                "name": "Cheap Trick",
+                "standUser": "Masazo Kinoto",
+                "destructivePower": "E",
+                "speed": "E",
+                "range": "E",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Anjuro Katagiri",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": 34,
+            "stands": [
+              {
+                "name": "Aqua Necklace",
+                "standUser": "Anjuro Katagiri",
+                "destructivePower": "C",
+                "speed": "C",
+                "range": "A",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Keicho Nijimura",
+            "gender": "Male",
+            "residentialArea": "Angelo Rock",
+            "parents": "",
+            "age": 18,
+            "stands": [
+              {
+                "name": "Bad Company",
+                "standUser": "Keicho Nijimura",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "C",
+                "stamina": "B",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "DIO's Mansion": {
+        "name": "DIO's Mansion",
+        "connections": {
+          "Angelo Rock": 3,
+          "Vineyard": 3,
+          "Libeccio": 2
+        },
+        "residents": [
+          {
+            "name": "Vanilla Ice",
+            "gender": "Male",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Cream",
+                "standUser": "Vanilla Ice",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "D",
+                "stamina": "C",
+                "precision": "C",
+                "developmentPotential": "D",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Rikiel",
+            "gender": "Male",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": 24,
+            "stands": [
+              {
+                "name": "Sky High",
+                "standUser": "Rikiel",
+                "destructivePower": "Null",
+                "speed": "Null",
+                "range": "B",
+                "stamina": "C",
+                "precision": "Null",
+                "developmentPotential": "Null",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Donatello Versus",
+            "gender": "Male",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": 25,
+            "stands": [
+              {
+                "name": "Under World",
+                "standUser": "Donatello Versus",
+                "destructivePower": "Null",
+                "speed": "C",
+                "range": "A",
+                "stamina": "C",
+                "precision": "Null",
+                "developmentPotential": "Null",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Ungalo",
+            "gender": "Male",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": 24,
+            "stands": [
+              {
+                "name": "Bohemian Rhapsody",
+                "standUser": "Ungalo",
+                "destructivePower": "Null",
+                "speed": "Null",
+                "range": "Infinity",
+                "stamina": "A",
+                "precision": "Null",
+                "developmentPotential": "Null",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Enrico Pucci",
+            "gender": "Male",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": 39,
+            "stands": [
+              {
+                "name": "Made in Heaven",
+                "standUser": "Enrico Pucci",
+                "destructivePower": "B",
+                "speed": "Infinity",
+                "range": "C",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Enya the Hag",
+            "gender": "Female",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Justice",
+                "standUser": "Enya the Hag",
+                "destructivePower": "D",
+                "speed": "E",
+                "range": "A",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "DIO",
+            "gender": "Male",
+            "residentialArea": "DIO's Mansion",
+            "parents": "",
+            "age": 121,
+            "stands": [
+              {
+                "name": "The World",
+                "standUser": "DIO",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "C",
+                "stamina": "A",
+                "precision": "B",
+                "developmentPotential": "B",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "Passione Restaurant": {
+        "name": "Passione Restaurant",
+        "connections": {},
+        "residents": [],
+        "info": "normal",
+        "residentInfo": {
+          "empty": true
+        }
+      },
+      "Libeccio": {
+        "name": "Libeccio",
+        "connections": {
+          "Joestar Mansion": 6,
+          "DIO's Mansion": 2,
+          "Vineyard": 6,
+          "San Giorgio Maggiore": 4,
+          "Green Dolphin Street Prison": 3
+        },
+        "residents": [],
+        "info": "restaurant",
+        "menu": {
+          "empty": false
+        },
+        "waitList": {
+          "empty": true
+        },
+        "processList": {
+          "empty": true
+        },
+        "residentInfo": {
+          "empty": true
+        }
+      },
+      "Morioh Grand Hotel": {
+        "name": "Morioh Grand Hotel",
+        "connections": {
+          "Jade Garden": 3,
+          "Town Hall": 5,
+          "Trattoria Trussardi": 6
+        },
+        "residents": [
+          {
+            "name": "Mikitaka Hazekura",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 216,
+            "stands": [
+              {
+                "name": "Earth Wind and Fire",
+                "standUser": "Mikitaka Hazekura",
+                "destructivePower": "C",
+                "speed": "C",
+                "range": "Null",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Toshikazu Hazamada",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 18,
+            "stands": [
+              {
+                "name": "Surface",
+                "standUser": "Toshikazu Hazamada",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "C",
+                "stamina": "B",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Yuya Fungami",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Highway Star",
+                "standUser": "Yuya Fungami",
+                "destructivePower": "C",
+                "speed": "B",
+                "range": "A",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Shigekiyo Yangu",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 14,
+            "stands": [
+              {
+                "name": "Harvest",
+                "standUser": "Shigekiyo Yangu",
+                "destructivePower": "E",
+                "speed": "B",
+                "range": "A",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Hayato Kawajiri",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 11,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Tonio Trussardi",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 29,
+            "stands": [
+              {
+                "name": "Pearl Jam",
+                "standUser": "Tonio Trussardi",
+                "destructivePower": "E",
+                "speed": "C",
+                "range": "B",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Tamami Kobayashi",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 20,
+            "stands": [
+              {
+                "name": "The Lock",
+                "standUser": "Tamami Kobayashi",
+                "destructivePower": "E",
+                "speed": "E",
+                "range": "A",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Reimi Sugimoto",
+            "gender": "Female",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 16,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Yukako Yamagishi",
+            "gender": "Female",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Love Deluxe",
+                "standUser": "Yukako Yamagishi",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "C",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "B",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Okuyasu Nijimura",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 15,
+            "stands": [
+              {
+                "name": "The Hand",
+                "standUser": "Okuyasu Nijimura",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "D",
+                "stamina": "C",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Rohan Kishibe",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 20,
+            "stands": [
+              {
+                "name": "Heaven's Door",
+                "standUser": "Rohan Kishibe",
+                "destructivePower": "D",
+                "speed": "B",
+                "range": "B",
+                "stamina": "B",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Aya Tsuji",
+            "gender": "Female",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Cinderella",
+                "standUser": "Aya Tsuji",
+                "destructivePower": "D",
+                "speed": "C",
+                "range": "C",
+                "stamina": "C",
+                "precision": "A",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Koichi Hirose",
+            "gender": "Male",
+            "residentialArea": "Morioh Grand Hotel",
+            "parents": "",
+            "age": 15,
+            "stands": [
+              {
+                "name": "Echoes",
+                "standUser": "Koichi Hirose",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "C",
+                "stamina": "B",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "San Giorgio Maggiore": {
+        "name": "San Giorgio Maggiore",
+        "connections": {
+          "Jade Garden": 2,
+          "Trattoria Trussardi": 3,
+          "Libeccio": 4
+        },
+        "residents": [
+          {
+            "name": "Tizzano",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Talking Head",
+                "standUser": "Tizzano",
+                "destructivePower": "E",
+                "speed": "E",
+                "range": "B",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Mario Zucchero",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": 24,
+            "stands": [
+              {
+                "name": "Soft Machine",
+                "standUser": "Mario Zucchero",
+                "destructivePower": "A",
+                "speed": "C",
+                "range": "E",
+                "stamina": "A",
+                "precision": "D",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Melone",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Baby Face",
+                "standUser": "Melone",
+                "destructivePower": "A",
+                "speed": "B",
+                "range": "A",
+                "stamina": "A",
+                "precision": "?",
+                "developmentPotential": "?",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Secco",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Oasis",
+                "standUser": "Secco",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "B",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Squalo",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Clash",
+                "standUser": "Squalo",
+                "destructivePower": "D",
+                "speed": "A",
+                "range": "B",
+                "stamina": "A",
+                "precision": "A",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Prosciutto",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "The Grateful Dead",
+                "standUser": "Prosciutto",
+                "destructivePower": "B",
+                "speed": "E",
+                "range": "B",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Carne",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Notorious B.I.G",
+                "standUser": "Carne",
+                "destructivePower": "A",
+                "speed": "Infinity",
+                "range": "Infinity",
+                "stamina": "Infinity",
+                "precision": "E",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Diavolo",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": 33,
+            "stands": [
+              {
+                "name": "King Crimson",
+                "standUser": "Diavolo",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "E",
+                "stamina": "E",
+                "precision": "?",
+                "developmentPotential": "?",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Sale",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Kraft Work",
+                "standUser": "Sale",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "E",
+                "stamina": "C",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Risotto Nero",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": 28,
+            "stands": [
+              {
+                "name": "Metallica",
+                "standUser": "Risotto Nero",
+                "destructivePower": "C",
+                "speed": "C",
+                "range": "C",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Cioccolata",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": 34,
+            "stands": [
+              {
+                "name": "Green Day",
+                "standUser": "Cioccolata",
+                "destructivePower": "A",
+                "speed": "C",
+                "range": "A",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Illuso",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Man in the Mirror",
+                "standUser": "Illuso",
+                "destructivePower": "C",
+                "speed": "C",
+                "range": "B",
+                "stamina": "D",
+                "precision": "C",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Formaggio",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Little Feet",
+                "standUser": "Formaggio",
+                "destructivePower": "D",
+                "speed": "B",
+                "range": "E",
+                "stamina": "A",
+                "precision": "D",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Ghiaccio",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "White Album",
+                "standUser": "Ghiaccio",
+                "destructivePower": "A",
+                "speed": "C",
+                "range": "C",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Pesci",
+            "gender": "Male",
+            "residentialArea": "San Giorgio Maggiore",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "Beach Boy",
+                "standUser": "Pesci",
+                "destructivePower": "C",
+                "speed": "B",
+                "range": "B",
+                "stamina": "C",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "Green Dolphin Street Prison": {
+        "name": "Green Dolphin Street Prison",
+        "connections": {
+          "Trattoria Trussardi": 6,
+          "Angelo Rock": 2,
+          "Libeccio": 3
+        },
+        "residents": [
+          {
+            "name": "Emporio Alnino",
+            "gender": "Male",
+            "residentialArea": "Green Dolphin Street Prison",
+            "parents": "",
+            "age": 11,
+            "stands": [
+              {
+                "name": "Burning Down the House",
+                "standUser": "Emporio Alnino",
+                "destructivePower": "Null",
+                "speed": "Null",
+                "range": "Null",
+                "stamina": "Null",
+                "precision": "Null",
+                "developmentPotential": "Null",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Weather Report",
+            "gender": "Male",
+            "residentialArea": "Green Dolphin Street Prison",
+            "parents": "",
+            "age": 39,
+            "stands": [
+              {
+                "name": "Weather Report",
+                "standUser": "Weather Report",
+                "destructivePower": "A",
+                "speed": "B",
+                "range": "C",
+                "stamina": "A",
+                "precision": "E",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Ermes Costello",
+            "gender": "Female",
+            "residentialArea": "Green Dolphin Street Prison",
+            "parents": "",
+            "age": 21,
+            "stands": [
+              {
+                "name": "Kiss",
+                "standUser": "Ermes Costello",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "A",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Narciso Anasui",
+            "gender": "Male",
+            "residentialArea": "Green Dolphin Street Prison",
+            "parents": "",
+            "age": 25,
+            "stands": [
+              {
+                "name": "Diver Down",
+                "standUser": "Narciso Anasui",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "E",
+                "stamina": "C",
+                "precision": "B",
+                "developmentPotential": "B",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Foo Fighters",
+            "gender": "Female",
+            "residentialArea": "Green Dolphin Street Prison",
+            "parents": "",
+            "age": 22,
+            "stands": [
+              {
+                "name": "Foo Fighters",
+                "standUser": "Foo Fighters",
+                "destructivePower": "B",
+                "speed": "A",
+                "range": "C",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "B",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "Town Hall": {
+        "name": "Town Hall",
+        "connections": {
+          "Jade Garden": 5,
+          "Cafe Deux Magots": 4,
+          "Morioh Grand Hotel": 5
+        },
+        "residents": [],
+        "info": "normal",
+        "residentInfo": {
+          "empty": true
+        }
+      },
+      "Polnareff Land": {
+        "name": "Polnareff Land",
+        "connections": {
+          "Cafe Deux Magots": 4,
+          "Savage Garden": 6
+        },
+        "residents": [
+          {
+            "name": "Iggy",
+            "gender": "Male",
+            "residentialArea": "Polnareff Land",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [
+              {
+                "name": "The Fool",
+                "standUser": "Iggy",
+                "destructivePower": "B",
+                "speed": "C",
+                "range": "D",
+                "stamina": "C",
+                "precision": "D",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Noriaki Kakyoin",
+            "gender": "Male",
+            "residentialArea": "Polnareff Land",
+            "parents": "",
+            "age": 17,
+            "stands": [
+              {
+                "name": "Hierophant Green",
+                "standUser": "Noriaki Kakyoin",
+                "destructivePower": "C",
+                "speed": "B",
+                "range": "A",
+                "stamina": "B",
+                "precision": "C",
+                "developmentPotential": "D",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Muhammad Avdol",
+            "gender": "Male",
+            "residentialArea": "Polnareff Land",
+            "parents": "",
+            "age": 29,
+            "stands": [
+              {
+                "name": "Magician's Red",
+                "standUser": "Muhammad Avdol",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "C",
+                "stamina": "B",
+                "precision": "C",
+                "developmentPotential": "D",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Jean Pierre Polnareff",
+            "gender": "Male",
+            "residentialArea": "Polnareff Land",
+            "parents": "",
+            "age": 24,
+            "stands": [
+              {
+                "name": "Silver Chariot",
+                "standUser": "Jean Pierre Polnareff",
+                "destructivePower": "C",
+                "speed": "A",
+                "range": "C",
+                "stamina": "B",
+                "precision": "B",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "Joestar Mansion": {
+        "name": "Joestar Mansion",
+        "connections": {
+          "Jade Garden": 2,
+          "Vineyard": 3,
+          "Libeccio": 6,
+          "Savage Garden": 4
+        },
+        "residents": [
+          {
+            "name": "Lisa Lisa",
+            "gender": "Female",
+            "residentialArea": "Joestar Mansion",
+            "parents": "",
+            "age": 50,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Jolyne Cujoh",
+            "gender": "Female",
+            "residentialArea": "Joestar Mansion",
+            "parents": "Jotaro Kujo",
+            "age": 19,
+            "stands": [
+              {
+                "name": "Stone Free",
+                "standUser": "Jolyne Cujoh",
+                "destructivePower": "A",
+                "speed": "B",
+                "range": "C",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Jonathan Joestar",
+            "gender": "Male",
+            "residentialArea": "Joestar Mansion",
+            "parents": "George Joestar I;Mary Joestar",
+            "age": 20,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Holy Kujo",
+            "gender": "Female",
+            "residentialArea": "Joestar Mansion",
+            "parents": "Joseph Joestar;Suzi Q.",
+            "age": 45,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Jotaro Kujo",
+            "gender": "Male",
+            "residentialArea": "Joestar Mansion",
+            "parents": "Holy Kujo;Sadao Kujo",
+            "age": 17,
+            "stands": [
+              {
+                "name": "Star Platinum",
+                "standUser": "Jotaro Kujo",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "C",
+                "stamina": "A",
+                "precision": "A",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Erina Pendleton",
+            "gender": "Female",
+            "residentialArea": "Joestar Mansion",
+            "parents": "",
+            "age": 70,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Josuke Higashikata",
+            "gender": "Male",
+            "residentialArea": "Joestar Mansion",
+            "parents": "Joseph Joestar;Tomoko Higashikata",
+            "age": 16,
+            "stands": [
+              {
+                "name": "Crazy Diamond",
+                "standUser": "Josuke Higashikata",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "D",
+                "stamina": "B",
+                "precision": "B",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Joseph Joestar",
+            "gender": "Male",
+            "residentialArea": "Joestar Mansion",
+            "parents": "George Joestar II;Lisa Lisa",
+            "age": 18,
+            "stands": [
+              {
+                "name": "Hermit Purple",
+                "standUser": "Joseph Joestar",
+                "destructivePower": "D",
+                "speed": "C",
+                "range": "D",
+                "stamina": "A",
+                "precision": "D",
+                "developmentPotential": "E",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "George Joestar II",
+            "gender": "Male",
+            "residentialArea": "Joestar Mansion",
+            "parents": "Erina Joestar;Jonathan Joestar",
+            "age": 32,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Giorno Giovanna",
+            "gender": "Male",
+            "residentialArea": "Joestar Mansion",
+            "parents": "DIO;Jonathan Joestar",
+            "age": 15,
+            "stands": [
+              {
+                "name": "Gold Experience",
+                "standUser": "Giorno Giovanna",
+                "destructivePower": "C",
+                "speed": "A",
+                "range": "C",
+                "stamina": "D",
+                "precision": "C",
+                "developmentPotential": "A",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Tomoko Higashikata",
+            "gender": "Female",
+            "residentialArea": "Joestar Mansion",
+            "parents": "",
+            "age": 37,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Suzi Q.",
+            "gender": "Female",
+            "residentialArea": "Joestar Mansion",
+            "parents": "",
+            "age": -2147483648,
+            "stands": [],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "Vineyard": {
+        "name": "Vineyard",
+        "connections": {
+          "Joestar Mansion": 3,
+          "DIO's Mansion": 3,
+          "Libeccio": 6,
+          "Savage Garden": 8
+        },
+        "residents": [
+          {
+            "name": "Bruno Bucciarati",
+            "gender": "Male",
+            "residentialArea": "Vineyard",
+            "parents": "",
+            "age": 20,
+            "stands": [
+              {
+                "name": "Sticky Fingers",
+                "standUser": "Bruno Bucciarati",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "C",
+                "stamina": "D",
+                "precision": "C",
+                "developmentPotential": "D",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Leone Abbacchio",
+            "gender": "Male",
+            "residentialArea": "Vineyard",
+            "parents": "",
+            "age": 21,
+            "stands": [
+              {
+                "name": "Moody Blues",
+                "standUser": "Leone Abbacchio",
+                "destructivePower": "C",
+                "speed": "C",
+                "range": "A",
+                "stamina": "A",
+                "precision": "C",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Narancia Ghirga",
+            "gender": "Male",
+            "residentialArea": "Vineyard",
+            "parents": "",
+            "age": 17,
+            "stands": [
+              {
+                "name": "Aerosmith",
+                "standUser": "Narancia Ghirga",
+                "destructivePower": "B",
+                "speed": "B",
+                "range": "B",
+                "stamina": "C",
+                "precision": "E",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Guido Mista",
+            "gender": "Male",
+            "residentialArea": "Vineyard",
+            "parents": "",
+            "age": 18,
+            "stands": [
+              {
+                "name": "Sex Pistols",
+                "standUser": "Guido Mista",
+                "destructivePower": "E",
+                "speed": "C",
+                "range": "B",
+                "stamina": "A",
+                "precision": "A",
+                "developmentPotential": "B",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Trish Una",
+            "gender": "Female",
+            "residentialArea": "Vineyard",
+            "parents": "",
+            "age": 15,
+            "stands": [
+              {
+                "name": "Spice Girl",
+                "standUser": "Trish Una",
+                "destructivePower": "A",
+                "speed": "A",
+                "range": "C",
+                "stamina": "B",
+                "precision": "D",
+                "developmentPotential": "C",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          },
+          {
+            "name": "Pannacotta Fugo",
+            "gender": "Male",
+            "residentialArea": "Vineyard",
+            "parents": "",
+            "age": 16,
+            "stands": [
+              {
+                "name": "Purple Haze",
+                "standUser": "Pannacotta Fugo",
+                "destructivePower": "A",
+                "speed": "B",
+                "range": "C",
+                "stamina": "E",
+                "precision": "E",
+                "developmentPotential": "B",
+                "table": {
+                  "empty": false
+                }
+              }
+            ],
+            "infoTable": {
+              "empty": false
+            },
+            "orderHistory": {
+              "empty": true
+            }
+          }
+        ],
+        "info": "normal",
+        "residentInfo": {
+          "empty": false
+        }
+      },
+      "Savage Garden": {
+        "name": "Savage Garden",
+        "connections": {
+          "Cafe Deux Magots": 4,
+          "Polnareff Land": 6,
+          "Joestar Mansion": 4,
+          "Vineyard": 8
+        },
+        "residents": [],
+        "info": "restaurant",
+        "menu": {
+          "empty": false
+        },
+        "waitList": {
+          "empty": true
+        },
+        "processList": {
+          "empty": true
+        },
+        "residentInfo": {
+          "empty": true
+        }
+      }
+    },
+    "residents": {
+      "Mikitaka Hazekura": {
+        "name": "Mikitaka Hazekura",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 216,
+        "stands": [
+          {
+            "name": "Earth Wind and Fire",
+            "standUser": "Mikitaka Hazekura",
+            "destructivePower": "C",
+            "speed": "C",
+            "range": "Null",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Akira Otoishi": {
+        "name": "Akira Otoishi",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": 19,
+        "stands": [
+          {
+            "name": "Red Hot Chili Pepper",
+            "standUser": "Akira Otoishi",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "A",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Tizzano": {
+        "name": "Tizzano",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Talking Head",
+            "standUser": "Tizzano",
+            "destructivePower": "E",
+            "speed": "E",
+            "range": "B",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Lisa Lisa": {
+        "name": "Lisa Lisa",
+        "gender": "Female",
+        "residentialArea": "Joestar Mansion",
+        "parents": "",
+        "age": 50,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Toshikazu Hazamada": {
+        "name": "Toshikazu Hazamada",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 18,
+        "stands": [
+          {
+            "name": "Surface",
+            "standUser": "Toshikazu Hazamada",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "C",
+            "stamina": "B",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Jolyne Cujoh": {
+        "name": "Jolyne Cujoh",
+        "gender": "Female",
+        "residentialArea": "Joestar Mansion",
+        "parents": "Jotaro Kujo",
+        "age": 19,
+        "stands": [
+          {
+            "name": "Stone Free",
+            "standUser": "Jolyne Cujoh",
+            "destructivePower": "A",
+            "speed": "B",
+            "range": "C",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Bruno Bucciarati": {
+        "name": "Bruno Bucciarati",
+        "gender": "Male",
+        "residentialArea": "Vineyard",
+        "parents": "",
+        "age": 20,
+        "stands": [
+          {
+            "name": "Sticky Fingers",
+            "standUser": "Bruno Bucciarati",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "C",
+            "stamina": "D",
+            "precision": "C",
+            "developmentPotential": "D",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Jonathan Joestar": {
+        "name": "Jonathan Joestar",
+        "gender": "Male",
+        "residentialArea": "Joestar Mansion",
+        "parents": "George Joestar I;Mary Joestar",
+        "age": 20,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Mario Zucchero": {
+        "name": "Mario Zucchero",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": 24,
+        "stands": [
+          {
+            "name": "Soft Machine",
+            "standUser": "Mario Zucchero",
+            "destructivePower": "A",
+            "speed": "C",
+            "range": "E",
+            "stamina": "A",
+            "precision": "D",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Iggy": {
+        "name": "Iggy",
+        "gender": "Male",
+        "residentialArea": "Polnareff Land",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "The Fool",
+            "standUser": "Iggy",
+            "destructivePower": "B",
+            "speed": "C",
+            "range": "D",
+            "stamina": "C",
+            "precision": "D",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Yuya Fungami": {
+        "name": "Yuya Fungami",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Highway Star",
+            "standUser": "Yuya Fungami",
+            "destructivePower": "C",
+            "speed": "B",
+            "range": "A",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Yoshikage Kira": {
+        "name": "Yoshikage Kira",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": 33,
+        "stands": [
+          {
+            "name": "Atom Heart Father",
+            "standUser": "Yoshikage Kira",
+            "destructivePower": "E",
+            "speed": "E",
+            "range": "Null",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          },
+          {
+            "name": "Killer Queen",
+            "standUser": "Yoshikage Kira",
+            "destructivePower": "A",
+            "speed": "B",
+            "range": "D",
+            "stamina": "B",
+            "precision": "B",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Melone": {
+        "name": "Melone",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Baby Face",
+            "standUser": "Melone",
+            "destructivePower": "A",
+            "speed": "B",
+            "range": "A",
+            "stamina": "A",
+            "precision": "?",
+            "developmentPotential": "?",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Noriaki Kakyoin": {
+        "name": "Noriaki Kakyoin",
+        "gender": "Male",
+        "residentialArea": "Polnareff Land",
+        "parents": "",
+        "age": 17,
+        "stands": [
+          {
+            "name": "Hierophant Green",
+            "standUser": "Noriaki Kakyoin",
+            "destructivePower": "C",
+            "speed": "B",
+            "range": "A",
+            "stamina": "B",
+            "precision": "C",
+            "developmentPotential": "D",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Holy Kujo": {
+        "name": "Holy Kujo",
+        "gender": "Female",
+        "residentialArea": "Joestar Mansion",
+        "parents": "Joseph Joestar;Suzi Q.",
+        "age": 45,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Ken Oyanagi": {
+        "name": "Ken Oyanagi",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": 11,
+        "stands": [
+          {
+            "name": "Boy II Man",
+            "standUser": "Ken Oyanagi",
+            "destructivePower": "C",
+            "speed": "B",
+            "range": "B",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Shigekiyo Yangu": {
+        "name": "Shigekiyo Yangu",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 14,
+        "stands": [
+          {
+            "name": "Harvest",
+            "standUser": "Shigekiyo Yangu",
+            "destructivePower": "E",
+            "speed": "B",
+            "range": "A",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Vanilla Ice": {
+        "name": "Vanilla Ice",
+        "gender": "Male",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Cream",
+            "standUser": "Vanilla Ice",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "D",
+            "stamina": "C",
+            "precision": "C",
+            "developmentPotential": "D",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Secco": {
+        "name": "Secco",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Oasis",
+            "standUser": "Secco",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "B",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Squalo": {
+        "name": "Squalo",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Clash",
+            "standUser": "Squalo",
+            "destructivePower": "D",
+            "speed": "A",
+            "range": "B",
+            "stamina": "A",
+            "precision": "A",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Jotaro Kujo": {
+        "name": "Jotaro Kujo",
+        "gender": "Male",
+        "residentialArea": "Joestar Mansion",
+        "parents": "Holy Kujo;Sadao Kujo",
+        "age": 17,
+        "stands": [
+          {
+            "name": "Star Platinum",
+            "standUser": "Jotaro Kujo",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "C",
+            "stamina": "A",
+            "precision": "A",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Terunosuke Miyamoto": {
+        "name": "Terunosuke Miyamoto",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Enigma",
+            "standUser": "Terunosuke Miyamoto",
+            "destructivePower": "E",
+            "speed": "E",
+            "range": "C",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Erina Pendleton": {
+        "name": "Erina Pendleton",
+        "gender": "Female",
+        "residentialArea": "Joestar Mansion",
+        "parents": "",
+        "age": 70,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Emporio Alnino": {
+        "name": "Emporio Alnino",
+        "gender": "Male",
+        "residentialArea": "Green Dolphin Street Prison",
+        "parents": "",
+        "age": 11,
+        "stands": [
+          {
+            "name": "Burning Down the House",
+            "standUser": "Emporio Alnino",
+            "destructivePower": "Null",
+            "speed": "Null",
+            "range": "Null",
+            "stamina": "Null",
+            "precision": "Null",
+            "developmentPotential": "Null",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Hayato Kawajiri": {
+        "name": "Hayato Kawajiri",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 11,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Prosciutto": {
+        "name": "Prosciutto",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "The Grateful Dead",
+            "standUser": "Prosciutto",
+            "destructivePower": "B",
+            "speed": "E",
+            "range": "B",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Toyohiro Kanedaichi": {
+        "name": "Toyohiro Kanedaichi",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Super Fly",
+            "standUser": "Toyohiro Kanedaichi",
+            "destructivePower": "E",
+            "speed": "E",
+            "range": "Null",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Yoshihiro Kira": {
+        "name": "Yoshihiro Kira",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Leone Abbacchio": {
+        "name": "Leone Abbacchio",
+        "gender": "Male",
+        "residentialArea": "Vineyard",
+        "parents": "",
+        "age": 21,
+        "stands": [
+          {
+            "name": "Moody Blues",
+            "standUser": "Leone Abbacchio",
+            "destructivePower": "C",
+            "speed": "C",
+            "range": "A",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Carne": {
+        "name": "Carne",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Notorious B.I.G",
+            "standUser": "Carne",
+            "destructivePower": "A",
+            "speed": "Infinity",
+            "range": "Infinity",
+            "stamina": "Infinity",
+            "precision": "E",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Weather Report": {
+        "name": "Weather Report",
+        "gender": "Male",
+        "residentialArea": "Green Dolphin Street Prison",
+        "parents": "",
+        "age": 39,
+        "stands": [
+          {
+            "name": "Weather Report",
+            "standUser": "Weather Report",
+            "destructivePower": "A",
+            "speed": "B",
+            "range": "C",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Josuke Higashikata": {
+        "name": "Josuke Higashikata",
+        "gender": "Male",
+        "residentialArea": "Joestar Mansion",
+        "parents": "Joseph Joestar;Tomoko Higashikata",
+        "age": 16,
+        "stands": [
+          {
+            "name": "Crazy Diamond",
+            "standUser": "Josuke Higashikata",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "D",
+            "stamina": "B",
+            "precision": "B",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Diavolo": {
+        "name": "Diavolo",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": 33,
+        "stands": [
+          {
+            "name": "King Crimson",
+            "standUser": "Diavolo",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "E",
+            "stamina": "E",
+            "precision": "?",
+            "developmentPotential": "?",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Rikiel": {
+        "name": "Rikiel",
+        "gender": "Male",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": 24,
+        "stands": [
+          {
+            "name": "Sky High",
+            "standUser": "Rikiel",
+            "destructivePower": "Null",
+            "speed": "Null",
+            "range": "B",
+            "stamina": "C",
+            "precision": "Null",
+            "developmentPotential": "Null",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Tonio Trussardi": {
+        "name": "Tonio Trussardi",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 29,
+        "stands": [
+          {
+            "name": "Pearl Jam",
+            "standUser": "Tonio Trussardi",
+            "destructivePower": "E",
+            "speed": "C",
+            "range": "B",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Narancia Ghirga": {
+        "name": "Narancia Ghirga",
+        "gender": "Male",
+        "residentialArea": "Vineyard",
+        "parents": "",
+        "age": 17,
+        "stands": [
+          {
+            "name": "Aerosmith",
+            "standUser": "Narancia Ghirga",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "B",
+            "stamina": "C",
+            "precision": "E",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Sale": {
+        "name": "Sale",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Kraft Work",
+            "standUser": "Sale",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "E",
+            "stamina": "C",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Joseph Joestar": {
+        "name": "Joseph Joestar",
+        "gender": "Male",
+        "residentialArea": "Joestar Mansion",
+        "parents": "George Joestar II;Lisa Lisa",
+        "age": 18,
+        "stands": [
+          {
+            "name": "Hermit Purple",
+            "standUser": "Joseph Joestar",
+            "destructivePower": "D",
+            "speed": "C",
+            "range": "D",
+            "stamina": "A",
+            "precision": "D",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Masazo Kinoto": {
+        "name": "Masazo Kinoto",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": 29,
+        "stands": [
+          {
+            "name": "Cheap Trick",
+            "standUser": "Masazo Kinoto",
+            "destructivePower": "E",
+            "speed": "E",
+            "range": "E",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Tamami Kobayashi": {
+        "name": "Tamami Kobayashi",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 20,
+        "stands": [
+          {
+            "name": "The Lock",
+            "standUser": "Tamami Kobayashi",
+            "destructivePower": "E",
+            "speed": "E",
+            "range": "A",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Guido Mista": {
+        "name": "Guido Mista",
+        "gender": "Male",
+        "residentialArea": "Vineyard",
+        "parents": "",
+        "age": 18,
+        "stands": [
+          {
+            "name": "Sex Pistols",
+            "standUser": "Guido Mista",
+            "destructivePower": "E",
+            "speed": "C",
+            "range": "B",
+            "stamina": "A",
+            "precision": "A",
+            "developmentPotential": "B",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Muhammad Avdol": {
+        "name": "Muhammad Avdol",
+        "gender": "Male",
+        "residentialArea": "Polnareff Land",
+        "parents": "",
+        "age": 29,
+        "stands": [
+          {
+            "name": "Magician's Red",
+            "standUser": "Muhammad Avdol",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "C",
+            "stamina": "B",
+            "precision": "C",
+            "developmentPotential": "D",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Reimi Sugimoto": {
+        "name": "Reimi Sugimoto",
+        "gender": "Female",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 16,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Ermes Costello": {
+        "name": "Ermes Costello",
+        "gender": "Female",
+        "residentialArea": "Green Dolphin Street Prison",
+        "parents": "",
+        "age": 21,
+        "stands": [
+          {
+            "name": "Kiss",
+            "standUser": "Ermes Costello",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "A",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Risotto Nero": {
+        "name": "Risotto Nero",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": 28,
+        "stands": [
+          {
+            "name": "Metallica",
+            "standUser": "Risotto Nero",
+            "destructivePower": "C",
+            "speed": "C",
+            "range": "C",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "George Joestar II": {
+        "name": "George Joestar II",
+        "gender": "Male",
+        "residentialArea": "Joestar Mansion",
+        "parents": "Erina Joestar;Jonathan Joestar",
+        "age": 32,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Donatello Versus": {
+        "name": "Donatello Versus",
+        "gender": "Male",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": 25,
+        "stands": [
+          {
+            "name": "Under World",
+            "standUser": "Donatello Versus",
+            "destructivePower": "Null",
+            "speed": "C",
+            "range": "A",
+            "stamina": "C",
+            "precision": "Null",
+            "developmentPotential": "Null",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Yukako Yamagishi": {
+        "name": "Yukako Yamagishi",
+        "gender": "Female",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Love Deluxe",
+            "standUser": "Yukako Yamagishi",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "C",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "B",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Okuyasu Nijimura": {
+        "name": "Okuyasu Nijimura",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 15,
+        "stands": [
+          {
+            "name": "The Hand",
+            "standUser": "Okuyasu Nijimura",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "D",
+            "stamina": "C",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Ungalo": {
+        "name": "Ungalo",
+        "gender": "Male",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": 24,
+        "stands": [
+          {
+            "name": "Bohemian Rhapsody",
+            "standUser": "Ungalo",
+            "destructivePower": "Null",
+            "speed": "Null",
+            "range": "Infinity",
+            "stamina": "A",
+            "precision": "Null",
+            "developmentPotential": "Null",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Cioccolata": {
+        "name": "Cioccolata",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": 34,
+        "stands": [
+          {
+            "name": "Green Day",
+            "standUser": "Cioccolata",
+            "destructivePower": "A",
+            "speed": "C",
+            "range": "A",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Enrico Pucci": {
+        "name": "Enrico Pucci",
+        "gender": "Male",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": 39,
+        "stands": [
+          {
+            "name": "Made in Heaven",
+            "standUser": "Enrico Pucci",
+            "destructivePower": "B",
+            "speed": "Infinity",
+            "range": "C",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Illuso": {
+        "name": "Illuso",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Man in the Mirror",
+            "standUser": "Illuso",
+            "destructivePower": "C",
+            "speed": "C",
+            "range": "B",
+            "stamina": "D",
+            "precision": "C",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Rohan Kishibe": {
+        "name": "Rohan Kishibe",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 20,
+        "stands": [
+          {
+            "name": "Heaven's Door",
+            "standUser": "Rohan Kishibe",
+            "destructivePower": "D",
+            "speed": "B",
+            "range": "B",
+            "stamina": "B",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Narciso Anasui": {
+        "name": "Narciso Anasui",
+        "gender": "Male",
+        "residentialArea": "Green Dolphin Street Prison",
+        "parents": "",
+        "age": 25,
+        "stands": [
+          {
+            "name": "Diver Down",
+            "standUser": "Narciso Anasui",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "E",
+            "stamina": "C",
+            "precision": "B",
+            "developmentPotential": "B",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Giorno Giovanna": {
+        "name": "Giorno Giovanna",
+        "gender": "Male",
+        "residentialArea": "Joestar Mansion",
+        "parents": "DIO;Jonathan Joestar",
+        "age": 15,
+        "stands": [
+          {
+            "name": "Gold Experience",
+            "standUser": "Giorno Giovanna",
+            "destructivePower": "C",
+            "speed": "A",
+            "range": "C",
+            "stamina": "D",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Aya Tsuji": {
+        "name": "Aya Tsuji",
+        "gender": "Female",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Cinderella",
+            "standUser": "Aya Tsuji",
+            "destructivePower": "D",
+            "speed": "C",
+            "range": "C",
+            "stamina": "C",
+            "precision": "A",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Formaggio": {
+        "name": "Formaggio",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Little Feet",
+            "standUser": "Formaggio",
+            "destructivePower": "D",
+            "speed": "B",
+            "range": "E",
+            "stamina": "A",
+            "precision": "D",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Foo Fighters": {
+        "name": "Foo Fighters",
+        "gender": "Female",
+        "residentialArea": "Green Dolphin Street Prison",
+        "parents": "",
+        "age": 22,
+        "stands": [
+          {
+            "name": "Foo Fighters",
+            "standUser": "Foo Fighters",
+            "destructivePower": "B",
+            "speed": "A",
+            "range": "C",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "B",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Jean Pierre Polnareff": {
+        "name": "Jean Pierre Polnareff",
+        "gender": "Male",
+        "residentialArea": "Polnareff Land",
+        "parents": "",
+        "age": 24,
+        "stands": [
+          {
+            "name": "Silver Chariot",
+            "standUser": "Jean Pierre Polnareff",
+            "destructivePower": "C",
+            "speed": "A",
+            "range": "C",
+            "stamina": "B",
+            "precision": "B",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Trish Una": {
+        "name": "Trish Una",
+        "gender": "Female",
+        "residentialArea": "Vineyard",
+        "parents": "",
+        "age": 15,
+        "stands": [
+          {
+            "name": "Spice Girl",
+            "standUser": "Trish Una",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "C",
+            "stamina": "B",
+            "precision": "D",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Enya the Hag": {
+        "name": "Enya the Hag",
+        "gender": "Female",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Justice",
+            "standUser": "Enya the Hag",
+            "destructivePower": "D",
+            "speed": "E",
+            "range": "A",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "DIO": {
+        "name": "DIO",
+        "gender": "Male",
+        "residentialArea": "DIO's Mansion",
+        "parents": "",
+        "age": 121,
+        "stands": [
+          {
+            "name": "The World",
+            "standUser": "DIO",
+            "destructivePower": "A",
+            "speed": "A",
+            "range": "C",
+            "stamina": "A",
+            "precision": "B",
+            "developmentPotential": "B",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Pannacotta Fugo": {
+        "name": "Pannacotta Fugo",
+        "gender": "Male",
+        "residentialArea": "Vineyard",
+        "parents": "",
+        "age": 16,
+        "stands": [
+          {
+            "name": "Purple Haze",
+            "standUser": "Pannacotta Fugo",
+            "destructivePower": "A",
+            "speed": "B",
+            "range": "C",
+            "stamina": "E",
+            "precision": "E",
+            "developmentPotential": "B",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Ghiaccio": {
+        "name": "Ghiaccio",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "White Album",
+            "standUser": "Ghiaccio",
+            "destructivePower": "A",
+            "speed": "C",
+            "range": "C",
+            "stamina": "A",
+            "precision": "E",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Pesci": {
+        "name": "Pesci",
+        "gender": "Male",
+        "residentialArea": "San Giorgio Maggiore",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [
+          {
+            "name": "Beach Boy",
+            "standUser": "Pesci",
+            "destructivePower": "C",
+            "speed": "B",
+            "range": "B",
+            "stamina": "C",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Koichi Hirose": {
+        "name": "Koichi Hirose",
+        "gender": "Male",
+        "residentialArea": "Morioh Grand Hotel",
+        "parents": "",
+        "age": 15,
+        "stands": [
+          {
+            "name": "Echoes",
+            "standUser": "Koichi Hirose",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "C",
+            "stamina": "B",
+            "precision": "C",
+            "developmentPotential": "A",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Anjuro Katagiri": {
+        "name": "Anjuro Katagiri",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": 34,
+        "stands": [
+          {
+            "name": "Aqua Necklace",
+            "standUser": "Anjuro Katagiri",
+            "destructivePower": "C",
+            "speed": "C",
+            "range": "A",
+            "stamina": "A",
+            "precision": "C",
+            "developmentPotential": "E",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Keicho Nijimura": {
+        "name": "Keicho Nijimura",
+        "gender": "Male",
+        "residentialArea": "Angelo Rock",
+        "parents": "",
+        "age": 18,
+        "stands": [
+          {
+            "name": "Bad Company",
+            "standUser": "Keicho Nijimura",
+            "destructivePower": "B",
+            "speed": "B",
+            "range": "C",
+            "stamina": "B",
+            "precision": "C",
+            "developmentPotential": "C",
+            "table": {
+              "empty": false
+            }
+          }
+        ],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Tomoko Higashikata": {
+        "name": "Tomoko Higashikata",
+        "gender": "Female",
+        "residentialArea": "Joestar Mansion",
+        "parents": "",
+        "age": 37,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      },
+      "Suzi Q.": {
+        "name": "Suzi Q.",
+        "gender": "Female",
+        "residentialArea": "Joestar Mansion",
+        "parents": "",
+        "age": -2147483648,
+        "stands": [],
+        "infoTable": {
+          "empty": false
+        },
+        "orderHistory": {
+          "empty": true
+        }
+      }
+    },
+    "MapName": "Default Map",
+    "TownHall": "Town Hall",
+    "SanGiorgioMaggiore": "San Giorgio Maggiore",
+    "JoestarMansion": "Joestar Mansion",
+    "TrattoriaTrussardi": "Trattoria Trussardi",
+    "GreenDophinStreetPrison": "Green Dolphin Street Prison",
+    "MoriohGrandHotel": "Morioh Grand Hotel",
+    "PassioneRestaurant": "Passione Restaurant",
+    "SavageGarden": "Savage Garden",
+    "Vineyard": "Vineyard",
+    "CafeDeuxMagots": "Cafe Deux Magots",
+    "DIOsMansion": "DIO's Mansion",
+    "AngeloRock": "Angelo Rock",
+    "PolnareffLand": "Polnareff Land",
+    "JadeGarden": "Jade Garden",
+    "Libeccio": "Libeccio"
+  },
+  "availableDestination": [
+    "Jade Garden",
+    "Cafe Deux Magots",
+    "Morioh Grand Hotel"
+  ],
+  "currentLocation": "Town Hall"
+}

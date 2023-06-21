@@ -31,7 +31,7 @@ public class Main {
                     add(new Choice("Parallel Map", "map"));
                     add(new Choice("Alternate map", "map"));
                 }});
-                System.out.println(MapMode);
+
                 ui.player.setMap(MapMode.get(2));
             }
             case 2 -> {
