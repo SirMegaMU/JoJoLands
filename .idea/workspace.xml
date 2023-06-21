@@ -6,8 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Food.java" beforeDir="false" afterPath="$PROJECT_DIR$/OTHERS/Food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FoodQuantity.java" beforeDir="false" afterPath="$PROJECT_DIR$/OTHERS/FoodQuantity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/OTHERS/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Restaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/OTHERS/Restaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SalesRecord.java" beforeDir="false" afterPath="$PROJECT_DIR$/OTHERS/SalesRecord.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/VentoAureo.java" beforeDir="false" afterPath="$PROJECT_DIR$/OTHERS/VentoAureo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/Multi_Choice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/Multi_Choice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +73,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Documents\GitHub\JoJoLands\OTHERS" />
       <recent name="E:\Documents\GitHub\JoJoLands\src\main\java\Menu" />
       <recent name="E:\Documents\GitHub\JoJoLands\src\main\java\Parser" />
       <recent name="E:\Documents\GitHub\JoJoLands" />
@@ -121,6 +128,9 @@
       <workItem from="1687002771783" duration="269000" />
       <workItem from="1687003054254" duration="56000" />
       <workItem from="1687003126318" duration="25121000" />
+      <workItem from="1687274626055" duration="261000" />
+      <workItem from="1687274923694" duration="2797000" />
+      <workItem from="1687308788768" duration="855000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -332,7 +342,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687100666994</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="update">
+      <created>1687274750429</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1687274750430</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

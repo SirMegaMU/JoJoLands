@@ -8,7 +8,7 @@ public class Multi_Choice extends Choice {
 
     public Multi_Choice(String name, String id, String[] choicelist) {
         super(name, id);
-        this.alphbet = "ABCDEFG";
+        this.alphbet = "ABCDEFGHIJKLMN";
         this.ChoiceList = new HashMap<Character, String>();
         for (int i = 0; i < choicelist.length; i++) {
             this.ChoiceList.put(this.alphbet.charAt(i), choicelist[i]);
@@ -21,6 +21,9 @@ public class Multi_Choice extends Choice {
         content.append(":\n   ");
         for (int i = 0; i < this.ChoiceList.size(); i++) {
             content.append("  [").append(this.alphbet.charAt(i)).append("] ").append(ChoiceList.get(this.alphbet.charAt(i)));
+            if (i % 4 == 0 && i != 0) {
+                content.append("\n  ");
+            }
         }
         return content.toString();
     }
