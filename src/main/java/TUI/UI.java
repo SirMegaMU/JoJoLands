@@ -3,6 +3,7 @@ package TUI;
 import Display.Display;
 import Mapping.Location;
 import Mapping.Resident;
+import Mapping.Restaurant;
 import Mapping.Stand;
 import Player.Player;
 
@@ -84,9 +85,15 @@ public class UI {
                 displayResidentInfo(currentLocation);
             }};
             case "listOres" -> {
-                ;
+                Restaurant r = (Restaurant) currentLocation;
+                System.out.println(r.menu + "\n");
             }
             case "stand" -> {
+                new Display() {
+                    {
+                        displayResidentInfo(currentLocation);
+                    }
+                }
                 ;
             }
             case "exit" -> {

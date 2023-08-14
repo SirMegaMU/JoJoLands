@@ -4,10 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="move unused files to OTHERS dir">
-      <change afterPath="$PROJECT_DIR$/save.json" afterDir="false" />
+    <list default="true" id="8f5f4451-6cf1-439c-879b-c6963db0ebe7" name="变更" comment="add example save file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTHERS/Food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTHERS/FoodQuantity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTHERS/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTHERS/Restaurant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTHERS/SalesRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OTHERS/VentoAureo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Display/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Display/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TUI/UI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TUI/UI.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,26 +52,27 @@
     <option name="showVisibilityIcons" value="true" />
     <option name="sortByType" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;database.data.extractors.current.export.id&quot;: &quot;Comma-separated (CSV)_id&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/Download/WIA1002&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "database.data.extractors.current.export.id": "Comma-separated (CSV)_id",
+    "last_opened_file_path": "F:/SteamLibrary/steamapps/common/Factorio/mods/Artificial_Wonders",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件&quot;: [
-      &quot;PLAIN_TEXT&quot;
+  "keyToStringList": {
+    "com.intellij.ide.scratch.ScratchImplUtil$2/新建临时文件": [
+      "PLAIN_TEXT"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Documents\GitHub\JoJoLands" />
@@ -124,7 +132,9 @@
       <workItem from="1687003126318" duration="25121000" />
       <workItem from="1687274626055" duration="261000" />
       <workItem from="1687274923694" duration="2797000" />
-      <workItem from="1687308788768" duration="3809000" />
+      <workItem from="1687308788768" duration="8934000" />
+      <workItem from="1687394906269" duration="149000" />
+      <workItem from="1687796670169" duration="31000" />
     </task>
     <task id="LOCAL-00001" summary="add resources">
       <created>1685769786813</created>
@@ -350,7 +360,14 @@
       <option name="project" value="LOCAL" />
       <updated>1687310775297</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="add example save file">
+      <created>1687313227605</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1687313227605</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -368,7 +385,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add OrderRamdomizers" />
     <MESSAGE value="get randomized orders" />
     <MESSAGE value="update randomizer" />
     <MESSAGE value="regulate funcs and vars" />
@@ -393,7 +409,8 @@
     <MESSAGE value="add resident Array to TownMap" />
     <MESSAGE value="update" />
     <MESSAGE value="move unused files to OTHERS dir" />
-    <option name="LAST_COMMIT_MESSAGE" value="move unused files to OTHERS dir" />
+    <MESSAGE value="add example save file" />
+    <option name="LAST_COMMIT_MESSAGE" value="add example save file" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

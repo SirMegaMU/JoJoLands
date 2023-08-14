@@ -29,17 +29,20 @@ public class Display {
                         Resident r = loc.residents.get(loc.residents.indexOf(ans.get(2)));
                         System.out.println(r.detialInfo());
                     }
+                    continue;
                 }
                 case "2" -> {
                     Sort s = new Sort(table);
                     Table t = s.complexSort(ans.get(2));
                     System.out.println(t);
                     System.out.println("\n");
+                    continue;
                 }
                 case "3" -> {
                     break;
                 }
             }
+            break;
         }
     }
 }

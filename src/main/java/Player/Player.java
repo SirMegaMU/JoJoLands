@@ -103,8 +103,7 @@ public class Player {
         int len = in.read(data);
         String str = new String(data, 0, len);
         ObjectMapper objectMapper = new ObjectMapper();
-        Player player = objectMapper.readValue(str, Player.class);
-        return player;
+        return objectMapper.readValue(str, Player.class);
     }
 
     public void SaveGame(String FilePath) throws IOException {
